@@ -13,7 +13,7 @@ public class FPS_Controller : MonoBehaviour
 
 
     public float lookSpeed = 2f;
-    public float lookXLimit = 45f;
+    public float lookXLimit = 70f;
 
 
     Vector3 moveDirection = Vector3.zero;

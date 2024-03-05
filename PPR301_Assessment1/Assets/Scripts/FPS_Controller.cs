@@ -20,6 +20,15 @@ public class FPS_Controller : MonoBehaviour
     float rotationX = 0;
 
     public bool canMove = true;
+    public bool canZoom = true;
+
+    private KeyCode zoomKey = KeyCode.Mouse1;
+
+    [Header("Zoom Parameters")]
+    [SerializeField] private float timeToZoom = 0.12f;
+    [SerializeField] private float zoomLevel = 30f;
+    private float defaultFOV;
+    private Coroutine zoomRoutine;
 
 
     CharacterController characterController;
@@ -28,6 +37,12 @@ public class FPS_Controller : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+    }
+
+    private void Awake()
+    {
+        defaultFOV = playerCamera.fieldOfView;
     }
 
     void Update()
@@ -74,5 +89,52 @@ public class FPS_Controller : MonoBehaviour
         }
 
         #endregion
+
+        if (canZoom)
+        {
+            Zooming();
+        }
+    }
+
+    void Zooming()
+    {
+        if (Input.GetKeyDown(zoomKey))
+        {
+            if(zoomRoutine != null)
+            {
+                StopCoroutine(zoomRoutine);
+                zoomRoutine = null;
+            }
+
+            zoomRoutine = StartCoroutine(ToggleZoom(true));
+        }
+
+        if (Input.GetKeyUp(zoomKey))
+        {
+            if (zoomRoutine != null)
+            {
+                StopCoroutine(zoomRoutine);
+                zoomRoutine = null;
+            }
+
+            zoomRoutine = StartCoroutine(ToggleZoom(false));
+        }
+    }
+
+    private IEnumerator ToggleZoom(bool isEnter)
+    {
+        float targetFOV = isEnter ? zoomLevel : defaultFOV;
+        float startingFOV = playerCamera.fieldOfView;
+        float timeElapsed = 0;
+
+        while(timeElapsed < timeToZoom)
+        {
+            playerCamera.fieldOfView = Mathf.Lerp(startingFOV, targetFOV, timeElapsed / timeToZoom);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        playerCamera.fieldOfView = targetFOV;
+        zoomRoutine = null;
     }
 }

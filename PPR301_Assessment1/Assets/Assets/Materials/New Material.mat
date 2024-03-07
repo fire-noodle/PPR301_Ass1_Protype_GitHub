@@ -51,5 +51,5 @@ Material:
     m_Floats:
     - _DoubleSidedNormalMode: 1
     m_Colors:
-    - _Color: {r: 0.9009443, g: 0.9622641, b: 0.28595582, a: 1}
+    - _Color: {r: 0.33018863, g: 0.33018863, b: 0.33018863, a: 1}
   m_BuildTextureStacks: []

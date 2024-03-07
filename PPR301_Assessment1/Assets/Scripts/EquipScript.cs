@@ -5,7 +5,8 @@ using UnityEngine;
 public class EquipScript : MonoBehaviour
 {
     public Transform PlayerTransform;
-    public GameObject Item;
+    public GameObject Item1;
+    public GameObject Collectable;
     public Camera Camera;
     public float range = 2f;
     public float open = 100f;
@@ -17,7 +18,7 @@ public class EquipScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Item.GetComponent<Rigidbody>().isKinematic = true;
+        Item1.GetComponent<Rigidbody>().isKinematic = true;
     }
 
     // Update is called once per frame
@@ -38,9 +39,15 @@ public class EquipScript : MonoBehaviour
             Debug.Log(hit.transform.name);
 
             Target target = hit.transform.GetComponent<Target>();
-            if (target != null /*&& target.transform.tag == "eqippable"*/)
+            if (target != null && hit.transform.CompareTag("equippable"))
             {
+                Item1 = hit.transform.gameObject;
                 EquipObject();
+            }
+            else if (target != null && hit.transform.CompareTag("collectable"))
+            {
+                Collectable = hit.transform.gameObject;
+                Collectable.SetActive(false);
             }
         }
     }
@@ -48,15 +55,15 @@ public class EquipScript : MonoBehaviour
     void UnequipObject()
     {
         PlayerTransform.DetachChildren();
-        Item.transform.eulerAngles = new Vector3(Item.transform.eulerAngles.x, Item.transform.eulerAngles.y, Item.transform.eulerAngles.z);
-        Item.GetComponent<Rigidbody>().isKinematic = false;
+        Item1.transform.eulerAngles = new Vector3(Item1.transform.eulerAngles.x, Item1.transform.eulerAngles.y, Item1.transform.eulerAngles.z);
+        Item1.GetComponent<Rigidbody>().isKinematic = false;
 
-        throwDirection = Item.transform.forward;
+        throwDirection = Item1.transform.forward;
 
         //throw
         if (canThrow)
         {
-            Item.GetComponent<Rigidbody>().AddForce(throwDirection * throwForce, ForceMode.Impulse);
+            Item1.GetComponent<Rigidbody>().AddForce(throwDirection * throwForce, ForceMode.Impulse);
             canThrow = false;
         }
 
@@ -64,10 +71,10 @@ public class EquipScript : MonoBehaviour
 
     void EquipObject()
     {
-        Item.GetComponent<Rigidbody>().isKinematic = true;
-        Item.transform.position = PlayerTransform.transform.position;
-        Item.transform.rotation = PlayerTransform.transform.rotation;
-        Item.transform.SetParent(PlayerTransform);
+        Item1.GetComponent<Rigidbody>().isKinematic = true;
+        Item1.transform.position = PlayerTransform.transform.position;
+        Item1.transform.rotation = PlayerTransform.transform.rotation;
+        Item1.transform.SetParent(PlayerTransform);
         canThrow = true;
     }
 }

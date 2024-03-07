@@ -39,7 +39,7 @@ public class EquipScript : MonoBehaviour
             Debug.Log(hit.transform.name);
 
             Target target = hit.transform.GetComponent<Target>();
-            if (target != null && hit.transform.CompareTag("equippable"))
+            if (target != null && (hit.transform.CompareTag("equippable") || hit.transform.CompareTag("equippable_pressable")))
             {
                 Item1 = hit.transform.gameObject;
                 EquipObject();
@@ -47,6 +47,11 @@ public class EquipScript : MonoBehaviour
             else if (target != null && hit.transform.CompareTag("collectable"))
             {
                 Collectable = hit.transform.gameObject;
+                Collectable.SetActive(false);
+            }
+            else if (target != null && hit.transform.name == "button1" )
+            {
+                //do button thing
                 Collectable.SetActive(false);
             }
         }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PressurePlate : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     void Start()
     {
         
@@ -13,12 +13,10 @@ public class PressurePlate : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         // Check if the collision involves the other GameObject you're interested in
-        if (collision.gameObject.CompareTag("PlayerFeet"))
+        if (collision.gameObject.CompareTag("PlayerFeet") || collision.gameObject.CompareTag("equippable_pressable"))
         {
             Debug.Log("Collision detected with " + collision.gameObject.name);
 
-            // Do something when the collision occurs, such as destroy the object
-            // Destroy(collision.gameObject);
         }
     }
 

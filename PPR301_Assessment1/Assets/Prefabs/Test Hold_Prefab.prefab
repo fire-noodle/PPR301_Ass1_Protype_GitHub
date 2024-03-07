@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 85669917287386321}
   - component: {fileID: 7948533338945540536}
   m_Layer: 0
-  m_Name: Test Hold object
+  m_Name: Test Hold_Prefab
   m_TagString: equippable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

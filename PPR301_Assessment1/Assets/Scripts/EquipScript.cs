@@ -7,12 +7,14 @@ public class EquipScript : MonoBehaviour
     public Transform PlayerTransform;
     public GameObject Item1;
     public GameObject Collectable;
+    public GameObject Player;
     public Camera Camera;
     public float range = 2f;
     public float open = 100f;
 
     public float throwForce = 5f;
     public Vector3 throwDirection = Vector3.forward;
+    public Vector3 Teleport;
     public bool canThrow = false;
 
     // Start is called before the first frame update
@@ -52,7 +54,9 @@ public class EquipScript : MonoBehaviour
             else if (target != null && hit.transform.name == "button1" )
             {
                 //do button thing
-                Collectable.SetActive(false);
+                Teleport = new Vector3(61.74f, 1f, 0f);
+                Player.transform.position = Teleport;
+                
             }
         }
     }

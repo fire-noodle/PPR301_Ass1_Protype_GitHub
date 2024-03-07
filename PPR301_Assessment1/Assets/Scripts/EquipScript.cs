@@ -10,6 +10,10 @@ public class EquipScript : MonoBehaviour
     public float range = 2f;
     public float open = 100f;
 
+    public float throwForce = 5f;
+    public Vector3 throwDirection = Vector3.forward;
+    public bool canThrow = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +38,7 @@ public class EquipScript : MonoBehaviour
             Debug.Log(hit.transform.name);
 
             Target target = hit.transform.GetComponent<Target>();
-            if (target != null)
+            if (target != null /*&& target.transform.tag == "eqippable"*/)
             {
                 EquipObject();
             }
@@ -46,6 +50,16 @@ public class EquipScript : MonoBehaviour
         PlayerTransform.DetachChildren();
         Item.transform.eulerAngles = new Vector3(Item.transform.eulerAngles.x, Item.transform.eulerAngles.y, Item.transform.eulerAngles.z);
         Item.GetComponent<Rigidbody>().isKinematic = false;
+
+        throwDirection = Item.transform.forward;
+
+        //throw
+        if (canThrow)
+        {
+            Item.GetComponent<Rigidbody>().AddForce(throwDirection * throwForce, ForceMode.Impulse);
+            canThrow = false;
+        }
+
     }
 
     void EquipObject()
@@ -54,5 +68,6 @@ public class EquipScript : MonoBehaviour
         Item.transform.position = PlayerTransform.transform.position;
         Item.transform.rotation = PlayerTransform.transform.rotation;
         Item.transform.SetParent(PlayerTransform);
+        canThrow = true;
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - equippable
   - collectable
+  - PlayerFeet
   layers:
   - Default
   - TransparentFX

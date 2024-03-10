@@ -17,6 +17,8 @@ public class EquipScript : MonoBehaviour
     public Vector3 Teleport;
     public bool canThrow = false;
 
+    public Cube_Spawner cs;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,6 +66,10 @@ public class EquipScript : MonoBehaviour
                 Teleport = new Vector3(-0.995f, 1.015f, -2.55f);
                 Player.transform.position = Teleport;
 
+            }
+            else if (target != null && hit.transform.name == "button3")
+            {
+                cs.Tutorial_Cube();
             }
         }
     }

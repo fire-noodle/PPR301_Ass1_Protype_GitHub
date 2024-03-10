@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PressurePlate : MonoBehaviour
 {
+    public Cube_Spawner cs;
+    public GameObject collectible1;
 
     void Start()
     {
@@ -16,6 +18,11 @@ public class PressurePlate : MonoBehaviour
         if (collision.gameObject.CompareTag("PlayerFeet") || collision.gameObject.CompareTag("equippable_pressable"))
         {
             Debug.Log("Collision detected with " + collision.gameObject.name);
+
+            if (this.transform.name == "Pressure_Plate")
+            {
+                collectible1.SetActive(true);
+            }
 
         }
     }

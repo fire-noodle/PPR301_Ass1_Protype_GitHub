@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Value: 0
   exposure:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: -4.4
   multiplier:
     m_OverrideState: 0
     m_Value: 1
@@ -86,7 +86,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   groundTint:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {r: 0.4, g: 0.25, b: 0.15, a: 1}
   groundColorTexture:
     m_OverrideState: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {fileID: 0}
   groundEmissionMultiplier:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   planetRotation:
     m_OverrideState: 0

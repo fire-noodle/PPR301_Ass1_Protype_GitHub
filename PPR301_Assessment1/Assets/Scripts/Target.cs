@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-
     public float drop = 2f;
 
     // Start is called before the first frame update

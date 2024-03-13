@@ -20,7 +20,7 @@ GameObject:
   m_TagString: collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7966432550765212255
 Transform:
@@ -170,7 +170,7 @@ MonoBehaviour:
     Path: event:/StarAmbience
   Event: 
   PlayEvent: 1
-  StopEvent: 2
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0

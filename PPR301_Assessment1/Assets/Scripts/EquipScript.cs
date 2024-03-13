@@ -56,7 +56,7 @@ public class EquipScript : MonoBehaviour
             else if (target != null && hit.transform.name == "button1" )
             {
                 //do button thing
-                Teleport = new Vector3(61.74f, 1f, 0f);
+                Teleport = new Vector3(80.8949966f, -18.9099998f, -14.9770002f);
                 Player.transform.position = Teleport;
                 
             }

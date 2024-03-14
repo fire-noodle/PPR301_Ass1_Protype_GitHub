@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8932530192690935968
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f077503be6ae942a1e1245dbd53ea9, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 0
+  quality:
+    m_OverrideState: 1
+    m_Value: 1
+  threshold:
+    m_OverrideState: 0
+    m_Value: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.373
+  scatter:
+    m_OverrideState: 0
+    m_Value: 0.7
+  tint:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  dirtTexture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
+  dirtIntensity:
+    m_OverrideState: 0
+    m_Value: 0
+  anamorphic:
+    m_OverrideState: 0
+    m_Value: 1
+  m_Resolution:
+    m_OverrideState: 1
+    m_Value: 2
+  m_HighQualityPrefiltering:
+    m_OverrideState: 1
+    m_Value: 0
+  m_HighQualityFiltering:
+    m_OverrideState: 1
+    m_Value: 1
 --- !u!114 &-6285265635756688443
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -56,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9008a067f4d626c4d8bc4bc48f04bb89, type: 3}
   m_Name: ScreenSpaceAmbientOcclusion
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   quality:
     m_OverrideState: 0
     m_Value: 1
@@ -65,7 +111,7 @@ MonoBehaviour:
     m_Value: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 1.22
   directLightingStrength:
     m_OverrideState: 0
     m_Value: 0
@@ -140,7 +186,7 @@ MonoBehaviour:
   active: 1
   indirectDiffuseLightingMultiplier:
     m_OverrideState: 1
-    m_Value: 0.56
+    m_Value: 1
   indirectDiffuseLightingLayers:
     m_OverrideState: 0
     m_Value: 255
@@ -170,6 +216,7 @@ MonoBehaviour:
   - {fileID: -6285265635756688443}
   - {fileID: -2097857812275556375}
   - {fileID: -3708422656136950494}
+  - {fileID: -8932530192690935968}
 --- !u!114 &2033018299855071054
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -182,10 +229,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ef2681fa3dc8c4fa031f044e68c63f, type: 3}
   m_Name: GlobalIllumination
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   quality:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 1
   enable:
     m_OverrideState: 1
     m_Value: 1
@@ -196,25 +243,25 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 3
   depthBufferThickness:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.1
   fullResolutionSS:
     m_OverrideState: 0
     m_Value: 1
   m_MaxRaySteps:
     m_OverrideState: 1
-    m_Value: 32
+    m_Value: 64
   m_DenoiseSS:
     m_OverrideState: 1
     m_Value: 1
   m_HalfResolutionDenoiserSS:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 0
   m_DenoiserRadiusSS:
-    m_OverrideState: 0
-    m_Value: 0.75
+    m_OverrideState: 1
+    m_Value: 0.5
   m_SecondDenoiserPassSS:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   lastBounceFallbackHierarchy:
     m_OverrideState: 0

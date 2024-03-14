@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: ee370441a1acedd4ca8991843df95b34
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 9801397f829a1ed42984340315cbf362, type: 3}
+  iesMetaData:
+    FileFormatVersion: LM-63-2002
+    IESPhotometricType: Type C
+    IESMaximumIntensity: 26400
+    IESMaximumIntensityUnit: Lumens
+    Manufacturer: COOPER LIGHTING - METALUX
+    LuminaireCatalogNumber: HBI-654T5-N-CL-UNV-EHT2-U
+    LuminaireDescription: HBI SERIES, FULL BODY STEEL HOUSING, WITH SIX T5HO LAMPS
+      NARROW DISTRIBUTION SPECULAR REFLECTOR AND STANDARD DOORFRAME WITH CLEAR ACRYLIC
+      LENS, NO UPLIGHT
+    LampCatalogNumber: 
+    LampDescription: SIX T5 HIGH OUTPUT LINEAR FLUORESCENT LAMPS, F54T5 54W - 4400
+      LUMENS EA
+    PrefabLightType: 0
+    SpotAngle: 120
+    iesSize: 128
+    ApplyLightAttenuation: 1
+    UseIESMaximumIntensity: 1
+    CookieCompression: 2
+    LightAimAxisRotation: -90

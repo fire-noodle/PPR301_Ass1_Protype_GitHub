@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door_Open : MonoBehaviour
+public class Door_Open_Conditional : MonoBehaviour
 {
 
     public Animator animator;
@@ -24,21 +24,22 @@ public class Door_Open : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // No open with E because is conditional
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (Action == true)
-            {
-                Action = false;
-                animator.SetBool("Open", true);
-            }
-        }
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //    if (Action == true)
+        //    {
+        //        Action = false;
+        //        animator.SetBool("Open", true);
+        //    }
+        //}
 
     }
 
     public void DoorOpen2()
     {
-        if (this.transform.name == "DoorOpen2")
+        //if (this.transform.name == "OpenDoor2")
         {
             animator.SetBool("Open", true);
         }

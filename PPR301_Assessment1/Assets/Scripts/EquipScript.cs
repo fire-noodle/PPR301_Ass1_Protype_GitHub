@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class EquipScript : MonoBehaviour
 {
     public Transform PlayerTransform;
     public GameObject Item1;
     public GameObject Collectable;
+    public GameObject BigAssCube;
     public GameObject Player;
     public Camera Camera;
     public float range = 2f;
@@ -18,6 +20,10 @@ public class EquipScript : MonoBehaviour
     public bool canThrow = false;
 
     public Cube_Spawner cs;
+    public Door_Open_Conditional doc;
+
+    public TMP_Text currentCollectablesUI;
+    public int collectableNum = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -51,7 +57,17 @@ public class EquipScript : MonoBehaviour
             else if (target != null && hit.transform.CompareTag("collectable"))
             {
                 Collectable = hit.transform.gameObject;
+                collectableNum ++;
+                currentCollectablesUI.text = collectableNum.ToString();
                 Collectable.SetActive(false);
+
+                if (collectableNum == 4)
+                {
+                    BigAssCube.SetActive(false);
+
+                    // WIP
+                   // doc.DoorOpen2();
+                }
             }
             else if (target != null && hit.transform.name == "button1" )
             {

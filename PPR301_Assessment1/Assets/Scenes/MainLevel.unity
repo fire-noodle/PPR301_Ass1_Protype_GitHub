@@ -3094,7 +3094,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1208216728}
-  - component: {fileID: 1208216727}
   m_Layer: 0
   m_Name: FMOD_Event_Emitter
   m_TagString: Untagged
@@ -3102,37 +3101,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1208216727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208216726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 2021704020
-      Data2: 1188939921
-      Data3: -1286712443
-      Data4: -836032139
-    Path: event:/Villa_Ambience
-  Event: 
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 0.6
-  OverrideMaxDistance: 32.395084
 --- !u!4 &1208216728
 Transform:
   m_ObjectHideFlags: 0
@@ -5085,6 +5053,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2197189}
     m_Modifications:
+    - target: {fileID: 2528469725646408362, guid: 6d923e054266b8e4d9eab1ae3ad4ef7e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7333448570810951909, guid: 6d923e054266b8e4d9eab1ae3ad4ef7e, type: 3}
       propertyPath: m_Name
       value: StarCollectable (1)
@@ -5146,6 +5118,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2197189}
     m_Modifications:
+    - target: {fileID: 2528469725646408362, guid: 6d923e054266b8e4d9eab1ae3ad4ef7e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7333448570810951909, guid: 6d923e054266b8e4d9eab1ae3ad4ef7e, type: 3}
       propertyPath: m_Name
       value: StarCollectable
@@ -9227,6 +9203,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2197189}
     m_Modifications:
+    - target: {fileID: 2528469725646408362, guid: 6d923e054266b8e4d9eab1ae3ad4ef7e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7333448570810951909, guid: 6d923e054266b8e4d9eab1ae3ad4ef7e, type: 3}
       propertyPath: m_Name
       value: StarCollectable

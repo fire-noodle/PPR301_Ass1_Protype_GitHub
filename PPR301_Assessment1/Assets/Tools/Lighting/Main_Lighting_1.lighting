@@ -32,7 +32,7 @@ LightingSettings:
   m_LightmapParameters: {fileID: 111300000, guid: c80d0d9615d456a4881f9b9b46d4ff4a, type: 2}
   m_ExportTrainingData: 0
   m_TrainingDataDestination: TrainingData
-  m_RealtimeResolution: 1
+  m_RealtimeResolution: 2
   m_ForceWhiteAlbedo: 0
   m_ForceUpdates: 0
   m_FinalGather: 0

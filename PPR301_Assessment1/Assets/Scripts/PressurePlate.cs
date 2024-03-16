@@ -7,6 +7,8 @@ public class PressurePlate : MonoBehaviour
     public Cube_Spawner cs;
     public GameObject collectible1;
 
+    public bool spawnedCollectible1 = false;
+
     void Start()
     {
         
@@ -19,9 +21,10 @@ public class PressurePlate : MonoBehaviour
         {
             Debug.Log("Collision detected with " + collision.gameObject.name);
 
-            if (this.transform.name == "Pressure_Plate")
+            if (this.transform.name == "Pressure_Plate" && spawnedCollectible1 == false)
             {
                 collectible1.SetActive(true);
+                spawnedCollectible1 = true;
             }
 
         }

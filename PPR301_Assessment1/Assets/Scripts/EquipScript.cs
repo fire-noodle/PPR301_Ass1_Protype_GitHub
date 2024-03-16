@@ -20,7 +20,8 @@ public class EquipScript : MonoBehaviour
     public bool canThrow = false;
 
     public Cube_Spawner cs;
-    public Door_Open_Conditional doc;
+    public Door_Open_Conditional doc1;
+    public Door_Open_Conditional doc2;
 
     public TMP_Text currentCollectablesUI;
     public int collectableNum = 0;
@@ -63,10 +64,12 @@ public class EquipScript : MonoBehaviour
 
                 if (collectableNum == 4)
                 {
+                    doc1.DoorOpen2();
+                }
+                if (collectableNum == 7)
+                {
                     BigAssCube.SetActive(false);
-
-                    // WIP
-                   // doc.DoorOpen2();
+                    doc2.DoorOpen2();
                 }
             }
             else if (target != null && hit.transform.name == "button1" )

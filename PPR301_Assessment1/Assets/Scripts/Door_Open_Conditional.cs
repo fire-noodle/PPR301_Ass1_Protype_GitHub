@@ -39,9 +39,15 @@ public class Door_Open_Conditional : MonoBehaviour
 
     public void DoorOpen2()
     {
-        //if (this.transform.name == "OpenDoor2")
+        if (this.transform.name == "OpenDoor2")
+        {
+            animator.SetBool("Open", true);
+        }
+
+        if (this.transform.name == "OpenDoor3")
         {
             animator.SetBool("Open", true);
         }
     }
+
 }

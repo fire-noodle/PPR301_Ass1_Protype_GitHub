@@ -34,15 +34,11 @@ public class Cube_Spawner : MonoBehaviour
             spawnedObject.GetComponent<Rigidbody>().isKinematic = true;
             isObjectSpawned = true; // Set the flag to true
         }
-        //else // If the object is spawned, delete it
-        //{
-        //    // Destroy the spawned object
-        //    Destroy(spawnedObject);
-        //    isObjectSpawned = false; // Set the flag to false
+        else // If the object is spawned, respawn it
+        {
 
-        //    // Instantiate the object at the spawn position
-        //    spawnedObject = Instantiate(prefab, spawnPosition, Quaternion.identity);
-        //    isObjectSpawned = true; // Set the flag to true
-        //}
+            spawnedObject.transform.position = spawnPosition;
+
+        }
     }
 }

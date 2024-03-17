@@ -6,7 +6,8 @@ public class Cube_Spawner : MonoBehaviour
 {
     public GameObject prefab; // The prefab you want to instantiate
     private GameObject spawnedObject; // Reference to the instantiated object
-    public GameObject turorialSpawn;
+    public GameObject turorialSpawn1;
+    public GameObject turorialSpawn2;
 
     private bool isObjectSpawned = false; // Flag to track if the object is currently spawned
     private Vector3 spawnPosition;// Position to spawn the object initially
@@ -25,7 +26,7 @@ public class Cube_Spawner : MonoBehaviour
 
     public void Tutorial_Cube()
     {
-        spawnPosition = turorialSpawn.transform.position;
+        spawnPosition = turorialSpawn1.transform.position;
 
         if (!isObjectSpawned)
         {
@@ -36,9 +37,27 @@ public class Cube_Spawner : MonoBehaviour
         }
         else // If the object is spawned, respawn it
         {
-
+            spawnedObject.SetActive(true);
             spawnedObject.transform.position = spawnPosition;
 
+        }
+    }
+
+    public void Tutorial_Cube2()
+    {
+        spawnPosition = turorialSpawn2.transform.position;
+
+        if (!isObjectSpawned)
+        {
+            // Instantiate the object at the spawn position
+            spawnedObject = Instantiate(prefab, spawnPosition, Quaternion.identity);
+            spawnedObject.GetComponent<Rigidbody>().isKinematic = true;
+            isObjectSpawned = true; // Set the flag to true
+        }
+        else // If the object is spawned, respawn it
+        {
+            spawnedObject.SetActive(true);
+            spawnedObject.transform.position = spawnPosition;
         }
     }
 }

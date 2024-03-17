@@ -21,7 +21,7 @@ public class PressurePlate : MonoBehaviour
         {
             Debug.Log("Collision detected with " + collision.gameObject.name);
 
-            if (this.transform.name == "Pressure_Plate" && spawnedCollectible1 == false)
+            if (/*this.transform.name == "Pressure_Plate" &&*/ spawnedCollectible1 == false)
             {
                 collectible1.SetActive(true);
                 spawnedCollectible1 = true;

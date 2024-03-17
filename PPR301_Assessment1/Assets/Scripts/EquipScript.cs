@@ -54,6 +54,8 @@ public class EquipScript : MonoBehaviour
             {
                 Item1 = hit.transform.gameObject;
                 EquipObject();
+
+                StartCoroutine(CubeTimer());
             }
             else if (target != null && hit.transform.CompareTag("collectable"))
             {
@@ -90,6 +92,10 @@ public class EquipScript : MonoBehaviour
             {
                 cs.Tutorial_Cube();
             }
+            else if (target != null && hit.transform.name == "button4")
+            {
+                cs.Tutorial_Cube2();
+            }
         }
     }
 
@@ -117,5 +123,15 @@ public class EquipScript : MonoBehaviour
         Item1.transform.rotation = PlayerTransform.transform.rotation;
         Item1.transform.SetParent(PlayerTransform);
         canThrow = true;
+    }
+
+    IEnumerator CubeTimer()
+    {
+        yield return new WaitForSeconds(5); // Wait for 5 seconds
+
+            // Code to execute after 5 seconds
+            Debug.Log("Cube despawned!");
+            PlayerTransform.DetachChildren();
+            Item1.SetActive(false);
     }
 }

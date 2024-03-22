@@ -17,7 +17,7 @@ Material:
   - _DISABLE_SSR_TRANSPARENT
   - _DOUBLESIDED_ON
   m_InvalidKeywords: []
-  m_LightmapFlags: 0
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
   m_CustomRenderQueue: 2450
@@ -49,17 +49,17 @@ Material:
     - _Float_1: 0.07
     - _OpaqueCullMode: 2
     - _ReceivesSSR: 1
-    - _Scale_of_Normal: 9.04
+    - _Scale_of_Normal: 7.42
     - _Smoothness: 0
     - _StencilRefDepth: 8
     - _StencilRefGBuffer: 10
     - _StencilRefMV: 40
     - _SupportDecals: 0
-    - _Wind_Speed: 0
-    - _Wind_Strength: 0.067
+    - _Wind_Speed: 0.338
+    - _Wind_Strength: 0.263
     - _ZTestGBuffer: 3
     m_Colors:
-    - _Bush_Colour: {r: 0.58611584, g: 1, b: 0, a: 0}
+    - _Bush_Colour: {r: 0.8693385, g: 1, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
     - _Vector4: {r: -0.08, g: 3.93, b: 0, a: 0}
   m_BuildTextureStacks: []

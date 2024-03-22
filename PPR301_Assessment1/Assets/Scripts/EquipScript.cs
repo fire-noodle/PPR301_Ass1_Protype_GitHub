@@ -70,7 +70,6 @@ public class EquipScript : MonoBehaviour
                 }
                 if (collectableNum == 7)
                 {
-                    BigAssCube.SetActive(false);
                     doc2.DoorOpen2();
                 }
             }

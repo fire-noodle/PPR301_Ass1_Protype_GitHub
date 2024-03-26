@@ -169,13 +169,13 @@ MonoBehaviour:
       Data4: 1236656140
     Path: event:/Interactables/CubeTimer
   Event: 
-  PlayEvent: 3
-  StopEvent: 12
+  PlayEvent: 1
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   AllowNonRigidbodyDoppler: 0
   Params: []
-  OverrideAttenuation: 1
+  OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 5.749704
+  OverrideMaxDistance: 60

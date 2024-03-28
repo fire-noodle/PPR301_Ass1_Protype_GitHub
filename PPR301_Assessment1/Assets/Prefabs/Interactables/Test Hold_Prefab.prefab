@@ -169,8 +169,8 @@ MonoBehaviour:
       Data4: 1236656140
     Path: event:/Interactables/CubeTimer
   Event: 
-  PlayEvent: 1
-  StopEvent: 2
+  PlayEvent: 0
+  StopEvent: 12
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0

@@ -19,12 +19,16 @@ public class EquipScript : MonoBehaviour
     public Vector3 Teleport;
     public bool canThrow = false;
 
-    public Cube_Spawner cs;
+    public Cube_Spawner cs1;
+    public Cube_Spawner cs2;
     public Door_Open_Conditional doc1;
     public Door_Open_Conditional doc2;
 
     public TMP_Text currentCollectablesUI;
     public int collectableNum = 0;
+
+    // Reference to the FMOD Studio Event Emitter component
+    private FMODUnity.StudioEventEmitter eventEmitter;
 
     // Start is called before the first frame update
     void Start()
@@ -89,11 +93,11 @@ public class EquipScript : MonoBehaviour
             }
             else if (target != null && hit.transform.name == "button3")
             {
-                cs.Tutorial_Cube();
+                cs1.Tutorial_Cube();
             }
             else if (target != null && hit.transform.name == "button4")
             {
-                cs.Tutorial_Cube2();
+                cs2.Tutorial_Cube2();
             }
         }
     }
@@ -121,6 +125,10 @@ public class EquipScript : MonoBehaviour
         Item1.transform.position = PlayerTransform.transform.position;
         Item1.transform.rotation = PlayerTransform.transform.rotation;
         Item1.transform.SetParent(PlayerTransform);
+
+        eventEmitter = GetComponentInChildren<FMODUnity.StudioEventEmitter>();
+        eventEmitter.Play();
+
         canThrow = true;
     }
 

@@ -5,11 +5,13 @@ using UnityEngine;
 public class Cube_Spawner : MonoBehaviour
 {
     public GameObject prefab; // The prefab you want to instantiate
-    private GameObject spawnedObject; // Reference to the instantiated object
+    private GameObject spawnedObject1; // Reference to the instantiated object
+    private GameObject spawnedObject2;
     public GameObject turorialSpawn1;
     public GameObject turorialSpawn2;
 
-    private bool isObjectSpawned = false; // Flag to track if the object is currently spawned
+    private bool isObject1Spawned = false; // Flag to track if the object is currently spawned
+    private bool isObject2Spawned = false; // Flag to track if the object is currently spawned
     private Vector3 spawnPosition;// Position to spawn the object initially
 
     // Start is called before the first frame update
@@ -28,17 +30,17 @@ public class Cube_Spawner : MonoBehaviour
     {
         spawnPosition = turorialSpawn1.transform.position;
 
-        if (!isObjectSpawned)
+        if (!isObject1Spawned)
         {
             // Instantiate the object at the spawn position
-            spawnedObject = Instantiate(prefab, spawnPosition, Quaternion.identity);
-            spawnedObject.GetComponent<Rigidbody>().isKinematic = true;
-            isObjectSpawned = true; // Set the flag to true
+            spawnedObject1 = Instantiate(prefab, spawnPosition, Quaternion.identity);
+            spawnedObject1.GetComponent<Rigidbody>().isKinematic = true;
+            isObject1Spawned = true; // Set the flag to true
         }
         else // If the object is spawned, respawn it
         {
-            spawnedObject.SetActive(true);
-            spawnedObject.transform.position = spawnPosition;
+            spawnedObject1.SetActive(true);
+            spawnedObject1.transform.position = spawnPosition;
 
         }
     }
@@ -47,17 +49,17 @@ public class Cube_Spawner : MonoBehaviour
     {
         spawnPosition = turorialSpawn2.transform.position;
 
-        if (!isObjectSpawned)
+        if (!isObject2Spawned)
         {
             // Instantiate the object at the spawn position
-            spawnedObject = Instantiate(prefab, spawnPosition, Quaternion.identity);
-            spawnedObject.GetComponent<Rigidbody>().isKinematic = true;
-            isObjectSpawned = true; // Set the flag to true
+            spawnedObject2 = Instantiate(prefab, spawnPosition, Quaternion.identity);
+            spawnedObject2.GetComponent<Rigidbody>().isKinematic = true;
+            isObject2Spawned = true; // Set the flag to true
         }
         else // If the object is spawned, respawn it
         {
-            spawnedObject.SetActive(true);
-            spawnedObject.transform.position = spawnPosition;
+            spawnedObject2.SetActive(true);
+            spawnedObject2.transform.position = spawnPosition;
         }
     }
 }

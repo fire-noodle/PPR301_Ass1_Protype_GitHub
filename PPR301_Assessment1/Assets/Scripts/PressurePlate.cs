@@ -9,9 +9,11 @@ public class PressurePlate : MonoBehaviour
 
     public bool spawnedCollectible1 = false;
 
+    private Change_Emission_Colour CEC;
+
     void Start()
     {
-        
+        CEC = GetComponentInChildren<Change_Emission_Colour>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -26,6 +28,8 @@ public class PressurePlate : MonoBehaviour
                 collectible1.SetActive(true);
                 spawnedCollectible1 = true;
             }
+
+            CEC.ChangeEmission(Color.green);
 
         }
     }

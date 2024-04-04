@@ -195,19 +195,19 @@ MonoBehaviour:
   active: 0
   quality:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 2
   enable:
     m_OverrideState: 1
     m_Value: 1
   tracing:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 1
   rayMiss:
     m_OverrideState: 0
     m_Value: 3
   depthBufferThickness:
     m_OverrideState: 1
-    m_Value: 0.234
+    m_Value: 0.192
   fullResolutionSS:
     m_OverrideState: 1
     m_Value: 1
@@ -215,14 +215,14 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 128
   m_DenoiseSS:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   m_HalfResolutionDenoiserSS:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   m_DenoiserRadiusSS:
     m_OverrideState: 1
-    m_Value: 0.207
+    m_Value: 0.5
   m_SecondDenoiserPassSS:
     m_OverrideState: 1
     m_Value: 1
@@ -248,7 +248,7 @@ MonoBehaviour:
     m_Value: 1
   mode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
   m_FullResolution:
     m_OverrideState: 1
     m_Value: 0
@@ -469,22 +469,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9008a067f4d626c4d8bc4bc48f04bb89, type: 3}
   m_Name: ScreenSpaceAmbientOcclusion
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   quality:
     m_OverrideState: 1
     m_Value: 3
   rayTracing:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.84
+    m_Value: 0.87
   directLightingStrength:
     m_OverrideState: 1
-    m_Value: 0.678
+    m_Value: 0.152
   radius:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 1.15
   spatialBilateralAggressiveness:
     m_OverrideState: 1
     m_Value: 0.15
@@ -493,7 +493,7 @@ MonoBehaviour:
     m_Value: 1
   ghostingReduction:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.567
   blurSharpness:
     m_OverrideState: 0
     m_Value: 0.1
@@ -513,7 +513,7 @@ MonoBehaviour:
     m_Value: 1
   m_StepCount:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 6
   m_FullResolution:
     m_OverrideState: 1
     m_Value: 0
@@ -537,7 +537,7 @@ MonoBehaviour:
     m_Value: 1
   m_DenoiserRadius:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.001
 --- !u!114 &6693915456885084026
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -726,28 +726,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d08ce26990eb1a4a9177b860541e702, type: 3}
   m_Name: Exposure
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   mode:
     m_OverrideState: 1
     m_Value: 1
   meteringMode:
-    m_OverrideState: 0
-    m_Value: 2
+    m_OverrideState: 1
+    m_Value: 0
   luminanceSource:
     m_OverrideState: 0
     m_Value: 1
   fixedExposure:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 2.72884
   compensation:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   limitMin:
-    m_OverrideState: 0
-    m_Value: -1
+    m_OverrideState: 1
+    m_Value: -1.1097736
   limitMax:
-    m_OverrideState: 0
-    m_Value: 14
+    m_OverrideState: 1
+    m_Value: 10.93
   curveMap:
     m_OverrideState: 0
     m_Value:
@@ -827,13 +827,13 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   adaptationMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   adaptationSpeedDarkToLight:
-    m_OverrideState: 0
-    m_Value: 3
+    m_OverrideState: 1
+    m_Value: 4.67
   adaptationSpeedLightToDark:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   weightTextureMask:
     m_OverrideState: 0

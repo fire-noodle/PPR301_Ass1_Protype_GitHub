@@ -27,6 +27,8 @@ public class EquipScript : MonoBehaviour
     public TMP_Text currentCollectablesUI;
     public int collectableNum = 0;
 
+    public Repulsion_Cube RC;
+
     // Reference to the FMOD Studio Event Emitter component
     private FMODUnity.StudioEventEmitter eventEmitter;
 
@@ -54,12 +56,19 @@ public class EquipScript : MonoBehaviour
             Debug.Log(hit.transform.name);
 
             Target target = hit.transform.GetComponent<Target>();
-            if (target != null && (hit.transform.CompareTag("equippable") || hit.transform.CompareTag("equippable_pressable")))
+            if (target != null && (hit.transform.CompareTag("equippable") || hit.transform.CompareTag("equippable_pressable") || hit.transform.CompareTag("equippable_pressable_repulsable")))
             {
                 Item1 = hit.transform.gameObject;
                 EquipObject();
 
-                StartCoroutine(CubeTimer());
+                if (target != null && (hit.transform.CompareTag("equippable") || hit.transform.CompareTag("equippable_pressable")))
+                {
+                    StartCoroutine(CubeTimer());
+                }
+                if (target != null && hit.transform.CompareTag("equippable_pressable_repulsable"))
+                {
+                    StartCoroutine(CubeTimerRepulser());
+                }
             }
             else if (target != null && hit.transform.CompareTag("collectable"))
             {
@@ -140,5 +149,16 @@ public class EquipScript : MonoBehaviour
             Debug.Log("Cube despawned!");
             PlayerTransform.DetachChildren();
             Item1.SetActive(false);
+    }
+    IEnumerator CubeTimerRepulser()
+    {
+        yield return new WaitForSeconds(5); // Wait for 5 seconds
+
+        // Code to execute after 5 seconds
+        PlayerTransform.DetachChildren();
+
+        //repulsives start here
+        RC.Repulse();
+        Item1.SetActive(false);
     }
 }

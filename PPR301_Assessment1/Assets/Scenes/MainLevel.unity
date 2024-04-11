@@ -9317,6 +9317,7 @@ MonoBehaviour:
   doc2: {fileID: 978398298}
   currentCollectablesUI: {fileID: 402410764}
   collectableNum: 0
+  RC: {fileID: 0}
 --- !u!114 &819502204
 MonoBehaviour:
   m_ObjectHideFlags: 0

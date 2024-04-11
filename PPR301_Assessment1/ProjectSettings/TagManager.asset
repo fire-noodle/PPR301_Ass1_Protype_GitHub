@@ -8,6 +8,7 @@ TagManager:
   - collectable
   - PlayerFeet
   - equippable_pressable
+  - equippable_pressable_repulsable
   layers:
   - Default
   - TransparentFX

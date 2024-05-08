@@ -111,7 +111,7 @@ public class EquipScript : MonoBehaviour
             {
                 cs2.Tutorial_Cube2();
             }
-            else if (hit.transform.name == "keypad1")
+            else if (hit.transform.name == "keypad1" || hit.transform.name == "keypad2")
             {
                 FPSC.canMove = false;
                 FPSC.canZoom = false;

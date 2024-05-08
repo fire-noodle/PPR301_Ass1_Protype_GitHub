@@ -9,6 +9,7 @@ TagManager:
   - PlayerFeet
   - equippable_pressable
   - equippable_pressable_repulsable
+  - keypad
   layers:
   - Default
   - TransparentFX

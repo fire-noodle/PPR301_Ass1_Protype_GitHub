@@ -100,6 +100,18 @@ public class Keypad : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
             }
+        else if (characterHolder.text == "2784" && this.transform.name == "keypad3")
+        {
+            //door open
+            doc1.DoorOpen2();
+
+            //reactivate player
+            keypadCanvas.gameObject.SetActive(false);
+            FPSC.canMove = true;
+            FPSC.canZoom = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
 
 
 

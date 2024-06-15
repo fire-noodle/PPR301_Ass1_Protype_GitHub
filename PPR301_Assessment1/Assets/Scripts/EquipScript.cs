@@ -23,6 +23,7 @@ public class EquipScript : MonoBehaviour
     public Cube_Spawner cs2;
     public Door_Open_Conditional doc1;
     public Door_Open_Conditional doc2;
+    public Door_Open_Conditional doc3;
 
     public TMP_Text currentCollectablesUI;
     public int collectableNum = 0;
@@ -31,6 +32,7 @@ public class EquipScript : MonoBehaviour
 
     public Canvas keypadCanvas;
     public Canvas keypadCanvas2;
+    public Canvas keypadCanvas3;
     public FPS_Controller FPSC;
 
     // Reference to the FMOD Studio Event Emitter component
@@ -89,6 +91,10 @@ public class EquipScript : MonoBehaviour
                 {
                     doc2.DoorOpen2();
                 }
+                if (collectableNum == 10)
+                {
+                    doc3.DoorOpen2();
+                }
             }
             else if (target != null && hit.transform.name == "button1" )
             {
@@ -112,6 +118,10 @@ public class EquipScript : MonoBehaviour
             {
                 cs2.Tutorial_Cube2();
             }
+            else if (target != null && hit.transform.name == "button5")
+            {
+                cs2.Tutorial_Cube3();
+            }
             else if (hit.transform.name == "keypad1")
             {
                 FPSC.canMove = false;
@@ -127,6 +137,14 @@ public class EquipScript : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Confined;
                 Cursor.visible = true;
                 keypadCanvas2.gameObject.SetActive(true);
+            }
+            else if (hit.transform.name == "keypad3")
+            {
+                FPSC.canMove = false;
+                FPSC.canZoom = false;
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+                keypadCanvas3.gameObject.SetActive(true);
             }
         }
     }

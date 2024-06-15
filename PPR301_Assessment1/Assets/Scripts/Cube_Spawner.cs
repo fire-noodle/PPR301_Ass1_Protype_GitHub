@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class Cube_Spawner : MonoBehaviour
 {
-    public GameObject prefab; // The prefab you want to instantiate
+    public GameObject prefab; // cube
+    public GameObject prefab_repulse; //repulsion cube
     private GameObject spawnedObject1; // Reference to the instantiated object
     private GameObject spawnedObject2;
+    private GameObject spawnedObject3;
     public GameObject turorialSpawn1;
     public GameObject turorialSpawn2;
+    public GameObject turorialSpawn3;
 
     private bool isObject1Spawned = false; // Flag to track if the object is currently spawned
     private bool isObject2Spawned = false; // Flag to track if the object is currently spawned
+    private bool isObject3Spawned = false; // Flag to track if the object is currently spawned
     private Vector3 spawnPosition;// Position to spawn the object initially
 
     // Start is called before the first frame update
@@ -60,6 +64,24 @@ public class Cube_Spawner : MonoBehaviour
         {
             spawnedObject2.SetActive(true);
             spawnedObject2.transform.position = spawnPosition;
+        }
+    }
+
+    public void Tutorial_Cube3()
+    {
+        spawnPosition = turorialSpawn3.transform.position;
+
+        if (!isObject3Spawned)
+        {
+            // Instantiate the object at the spawn position
+            spawnedObject3 = Instantiate(prefab_repulse, spawnPosition, Quaternion.identity);
+            spawnedObject3.GetComponent<Rigidbody>().isKinematic = true;
+            isObject3Spawned = true; // Set the flag to true
+        }
+        else // If the object is spawned, respawn it
+        {
+            spawnedObject3.SetActive(true);
+            spawnedObject3.transform.position = spawnPosition;
         }
     }
 }

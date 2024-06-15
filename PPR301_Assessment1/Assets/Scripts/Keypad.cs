@@ -76,7 +76,7 @@ public class Keypad : MonoBehaviour
     public void EnterPressed()
     {
 
-            if (characterHolder.text == "19")
+            if (characterHolder.text == "19" && this.transform.name == "keypad1")
             {
                 //door open
                 doc1.DoorOpen2();
@@ -88,27 +88,22 @@ public class Keypad : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
             }
-            else
+            else if (characterHolder.text == "411" && this.transform.name == "keypad2")
             {
-                //failure buzzer??
+                //door open
+                doc1.DoorOpen2();
+
+                //reactivate player
+                keypadCanvas.gameObject.SetActive(false);
+                FPSC.canMove = true;
+                FPSC.canZoom = true;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
             }
 
-            //if (characterHolder.text == "411")
-            //{
-            //    //door open
-            //    doc1.DoorOpen2();
 
-            //    //reactivate player
-            //    keypadCanvas.gameObject.SetActive(false);
-            //    FPSC.canMove = true;
-            //    FPSC.canZoom = true;
-            //    Cursor.lockState = CursorLockMode.Locked;
-            //    Cursor.visible = false;
-            //}
-            //else
-            //{
-            //    //failure buzzer??
-            //}
+
+
 
     }
 

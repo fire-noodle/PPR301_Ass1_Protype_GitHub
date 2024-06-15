@@ -30,6 +30,7 @@ public class EquipScript : MonoBehaviour
     public Repulsion_Cube RC;
 
     public Canvas keypadCanvas;
+    public Canvas keypadCanvas2;
     public FPS_Controller FPSC;
 
     // Reference to the FMOD Studio Event Emitter component
@@ -111,13 +112,21 @@ public class EquipScript : MonoBehaviour
             {
                 cs2.Tutorial_Cube2();
             }
-            else if (hit.transform.name == "keypad1" || hit.transform.name == "keypad2")
+            else if (hit.transform.name == "keypad1")
             {
                 FPSC.canMove = false;
                 FPSC.canZoom = false;
                 Cursor.lockState = CursorLockMode.Confined;
                 Cursor.visible = true;
                 keypadCanvas.gameObject.SetActive(true);
+            }
+            else if (hit.transform.name == "keypad2")
+            {
+                FPSC.canMove = false;
+                FPSC.canZoom = false;
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+                keypadCanvas2.gameObject.SetActive(true);
             }
         }
     }

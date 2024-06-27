@@ -21,7 +21,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: 2007
   stringTagMap: {}
   disabledShaderPasses:
   - TransparentDepthPrepass
@@ -183,7 +183,7 @@ Material:
     - _DoubleSidedEnable: 0
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 1
-    - _DrawOrder: 0
+    - _DrawOrder: 7
     - _DstBlend: 0
     - _EmissiveColorMode: 1
     - _EmissiveExposureWeight: 1
@@ -207,7 +207,7 @@ Material:
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
     - _LinkDetailsWithBase: 1
-    - _MaskBlendSrc: 1
+    - _MaskBlendSrc: 0
     - _MaterialID: 1
     - _Metallic: 0
     - _MetallicRemapMax: 1
@@ -286,6 +286,7 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!114 &2933492683382610850
 MonoBehaviour:
   m_ObjectHideFlags: 11

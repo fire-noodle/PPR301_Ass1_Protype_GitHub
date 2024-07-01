@@ -26,7 +26,7 @@ Material:
   m_Name: FakeInterior Variant
   m_Shader: {fileID: -6465566751694194690, guid: 1cdc217ae521e7742a830abe1ecd8c30, type: 3}
   m_Parent: {fileID: -876546973899608171, guid: 1cdc217ae521e7742a830abe1ecd8c30, type: 3}
-  m_ModifiedSerializedProperties: 0
+  m_ModifiedSerializedProperties: 16
   m_ValidKeywords:
   - _ALPHATEST_ON
   m_InvalidKeywords: []

@@ -10,7 +10,7 @@ ModelImporter:
       name: White_Mat
     second: {fileID: 7096154819692636390, guid: 6e590d6aabee59b41b15739e640ea588, type: 3}
   materials:
-    materialImportMode: 2
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1

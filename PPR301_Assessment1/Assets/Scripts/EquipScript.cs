@@ -24,6 +24,7 @@ public class EquipScript : MonoBehaviour
     public Door_Open_Conditional doc1;
     public Door_Open_Conditional doc2;
     public Door_Open_Conditional doc3;
+    public PlayerData PD;
 
     public TMP_Text currentCollectablesUI;
     public int collectableNum = 0;
@@ -34,6 +35,8 @@ public class EquipScript : MonoBehaviour
     public Canvas keypadCanvas2;
     public Canvas keypadCanvas3;
     public FPS_Controller FPSC;
+
+    //public Vector3 playerPos;
 
     // Reference to the FMOD Studio Event Emitter component
     private FMODUnity.StudioEventEmitter eventEmitter;
@@ -47,11 +50,13 @@ public class EquipScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("f"))
+        if (Input.GetMouseButtonDown(0))
         {
             UnequipObject();
             Shoot();
         }
+
+        //playerPos = this.transform.position;
     }
 
     void Shoot()
@@ -78,6 +83,47 @@ public class EquipScript : MonoBehaviour
             }
             else if (target != null && hit.transform.CompareTag("collectable"))
             {
+                if (hit.transform.name == "StarCollectable")
+                {
+                    PD.col1 = true;
+                }
+                else if (hit.transform.name == "StarCollectable (1)")
+                {
+                    PD.col2 = true;
+                }
+                else if (hit.transform.name == "StarCollectable (2)")
+                {
+                    PD.col3 = true;
+                }
+                else if (hit.transform.name == "StarCollectable (3)")
+                {
+                    PD.col4 = true;
+                }
+                else if (hit.transform.name == "StarCollectable (4)")
+                {
+                    PD.col5 = true;
+                }
+                else if (hit.transform.name == "StarCollectable (5)")
+                {
+                    PD.col6 = true;
+                }
+                else if (hit.transform.name == "StarCollectable (6)")
+                {
+                    PD.col7 = true;
+                }
+                else if (hit.transform.name == "StarCollectable (cubeSpawner)")
+                {
+                    PD.col8 = true;
+                }
+                else if (hit.transform.name == "StarCollectable (spawned)")
+                {
+                    PD.col9 = true;
+                }
+                else if (hit.transform.name == "StarCollectable (9)")
+                {
+                    PD.col10 = true;
+                }
+
                 Collectable = hit.transform.gameObject;
                 collectableNum ++;
                 currentCollectablesUI.text = collectableNum.ToString();
@@ -199,4 +245,23 @@ public class EquipScript : MonoBehaviour
         RC.Repulse();
         Item1.SetActive(false);
     }
+
+    //public void SaveGame()
+    //{
+    //    SaveSystem.SavePlayer(this);
+    //}
+    //public void LoadGame()
+    //{
+    //    PlayerData data = SaveSystem.LoadPlayer();
+
+    //    Vector3 position;
+    //    position.x = data.position[0];
+    //    position.y = data.position[1];
+    //    position.z = data.position[2];
+
+    //    Player.transform.position = position;
+
+    //    collectableNum = data.collectables;
+
+    //}
 }

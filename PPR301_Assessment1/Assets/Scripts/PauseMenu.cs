@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour
 
     public FPS_Controller FPSC;
 
+    public EquipScript ES;
+
     // Start is called before the first frame update
     void Start()
     {

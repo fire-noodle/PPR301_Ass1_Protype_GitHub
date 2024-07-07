@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using FMODUnity;
 
 public class Keypad : MonoBehaviour
 {
@@ -25,6 +26,17 @@ public class Keypad : MonoBehaviour
     public FPS_Controller FPSC;
 
     public Door_Open_Conditional doc1;
+
+    public bool failure = false;
+
+    void Update()
+    {
+        if (failure == true)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/ButtonPress", GetComponent<Transform>().position);
+            failure = false;
+        }
+    }
 
     public void B1()
     {
@@ -112,9 +124,10 @@ public class Keypad : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
-
-
-
+        else
+        {
+            failure = true;
+        }
 
 
     }
@@ -130,8 +143,5 @@ public class Keypad : MonoBehaviour
         Cursor.visible = false;
     }
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

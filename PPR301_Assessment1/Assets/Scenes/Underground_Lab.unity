@@ -1815,6 +1815,10 @@ PrefabInstance:
       propertyPath: m_ReceiveGI
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b0672854dbec8d43a568cd392950215, type: 2}
     - target: {fileID: 919132149155446097, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
       propertyPath: m_Name
       value: Whiteboard (11)
@@ -2380,6 +2384,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b0672854dbec8d43a568cd392950215, type: 2}
     - target: {fileID: 919132149155446097, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
       propertyPath: m_Name
       value: Whiteboard (10)
@@ -3847,6 +3855,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b0672854dbec8d43a568cd392950215, type: 2}
     - target: {fileID: 919132149155446097, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
       propertyPath: m_Name
       value: Whiteboard (5)
@@ -5019,6 +5031,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b0672854dbec8d43a568cd392950215, type: 2}
     - target: {fileID: 919132149155446097, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
       propertyPath: m_Name
       value: Whiteboard (9)
@@ -16499,6 +16515,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b0672854dbec8d43a568cd392950215, type: 2}
     - target: {fileID: 919132149155446097, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
       propertyPath: m_Name
       value: Whiteboard (7)
@@ -26245,6 +26265,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b0672854dbec8d43a568cd392950215, type: 2}
     - target: {fileID: 919132149155446097, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
       propertyPath: m_Name
       value: Whiteboard (1)
@@ -28775,6 +28799,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b0672854dbec8d43a568cd392950215, type: 2}
     - target: {fileID: 919132149155446097, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
       propertyPath: m_Name
       value: Whiteboard (4)
@@ -31393,6 +31421,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b0672854dbec8d43a568cd392950215, type: 2}
     - target: {fileID: 919132149155446097, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
       propertyPath: m_Name
       value: Whiteboard (6)
@@ -36467,6 +36499,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b0672854dbec8d43a568cd392950215, type: 2}
     - target: {fileID: 919132149155446097, guid: 7f8b793d3c310b748a9e1fc2ac2f37ae, type: 3}
       propertyPath: m_Name
       value: Whiteboard (8)

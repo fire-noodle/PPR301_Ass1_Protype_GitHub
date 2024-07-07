@@ -28,13 +28,19 @@ public class Keypad : MonoBehaviour
     public Door_Open_Conditional doc1;
 
     public bool failure = false;
+    public bool success = false;
 
     void Update()
     {
         if (failure == true)
         {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/ButtonPress", GetComponent<Transform>().position);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/KeypadError", GetComponent<Transform>().position);
             failure = false;
+        }
+        if (success == true)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/KeypadSuccess", GetComponent<Transform>().position);
+            success = false;
         }
     }
 
@@ -88,30 +94,32 @@ public class Keypad : MonoBehaviour
     public void EnterPressed()
     {
 
-            if (characterHolder.text == "19" && this.transform.name == "keypad1")
-            {
-                //door open
-                doc1.DoorOpen2();
+        if (characterHolder.text == "19" && this.transform.name == "keypad1")
+        {
+            //door open
+            doc1.DoorOpen2();
 
-                //reactivate player
-                keypadCanvas.gameObject.SetActive(false);
-                FPSC.canMove = true;
-                FPSC.canZoom = true;
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
-            else if (characterHolder.text == "411" && this.transform.name == "keypad2")
-            {
-                //door open
-                doc1.DoorOpen2();
+            //reactivate player
+            keypadCanvas.gameObject.SetActive(false);
+            FPSC.canMove = true;
+            FPSC.canZoom = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            success = true;
+        }
+        else if (characterHolder.text == "411" && this.transform.name == "keypad2")
+        {
+            //door open
+            doc1.DoorOpen2();
 
-                //reactivate player
-                keypadCanvas.gameObject.SetActive(false);
-                FPSC.canMove = true;
-                FPSC.canZoom = true;
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
+            //reactivate player
+            keypadCanvas.gameObject.SetActive(false);
+            FPSC.canMove = true;
+            FPSC.canZoom = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            success = true;
+        }
         else if (characterHolder.text == "2784" && this.transform.name == "keypad3")
         {
             //door open
@@ -123,6 +131,7 @@ public class Keypad : MonoBehaviour
             FPSC.canZoom = true;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            success = true;
         }
         else
         {

@@ -8,6 +8,7 @@ public class Door_Open_Conditional : MonoBehaviour
 
     public Animator animator;
     public bool Action = false;
+    public bool opened = false;
 
     void OnTriggerEnter(Collider collision)
     {
@@ -25,21 +26,17 @@ public class Door_Open_Conditional : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // No open with E because is conditional
-
-        //if (Input.GetKeyDown(KeyCode.E))
-        //{
-        //    if (Action == true)
-        //    {
-        //        Action = false;
-        //        animator.SetBool("Open", true);
-        //    }
-        //}
+        if (opened == true)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/DoorOpen", GetComponent<Transform>().position);
+            opened = false;
+        }
 
     }
 
     public void DoorOpen2()
     {
+        opened = true;
         if (this.transform.name == "OpenDoor2")
         {
             animator.SetBool("Open", true);

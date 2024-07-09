@@ -31,6 +31,7 @@ public class Door_Open : MonoBehaviour
             {
                 Action = false;
                 animator.SetBool("Open", true);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/DoorOpen", GetComponent<Transform>().position);
             }
         }
 

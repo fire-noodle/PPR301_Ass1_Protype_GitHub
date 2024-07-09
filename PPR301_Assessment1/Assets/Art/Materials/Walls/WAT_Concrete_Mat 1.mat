@@ -81,6 +81,7 @@ Material:
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
     - _BlendMode: 0
+    - _Colour_Switch: 1
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
@@ -95,7 +96,7 @@ Material:
     - _ExcludeFromTUAndAA: 0
     - _MaterialID: 1
     - _MaterialTypeMask: 2
-    - _Normal_Intensity: 0.62
+    - _Normal_Intensity: 0.256
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 0
     - _RayTracing: 0
@@ -105,7 +106,7 @@ Material:
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
     - _Scale: 0.48
-    - _Smoothness: 0.5
+    - _Smoothness: 0
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
@@ -133,6 +134,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
+    - _Color: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

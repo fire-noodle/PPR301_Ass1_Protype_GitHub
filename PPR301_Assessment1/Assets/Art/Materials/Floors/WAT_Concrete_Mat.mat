@@ -46,12 +46,20 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _SideTexture_Normal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Side_Texture:
         m_Texture: {fileID: 2800000, guid: e0c60ed0437c4384597ef5a541375fc8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TopTexture:
         m_Texture: {fileID: 2800000, guid: e0c60ed0437c4384597ef5a541375fc8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopTexture_Normal:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -73,6 +81,7 @@ Material:
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
     - _BlendMode: 0
+    - _Colour_Switch: 1
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
@@ -87,6 +96,7 @@ Material:
     - _ExcludeFromTUAndAA: 0
     - _MaterialID: 1
     - _MaterialTypeMask: 2
+    - _Normal_Intensity: 1
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 0
     - _RayTracing: 0
@@ -96,6 +106,7 @@ Material:
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
     - _Scale: 0.35
+    - _Smoothness: 0.5
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
@@ -123,6 +134,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
+    - _Color: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

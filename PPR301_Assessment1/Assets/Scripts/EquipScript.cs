@@ -30,6 +30,7 @@ public class EquipScript : MonoBehaviour
     public int collectableNum = 0;
 
     public Repulsion_Cube RC;
+    public bool boom = false;
 
     public Canvas keypadCanvas;
     public Canvas keypadCanvas2;
@@ -54,6 +55,12 @@ public class EquipScript : MonoBehaviour
         {
             UnequipObject();
             Shoot();
+        }
+
+        if (boom == true)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/ExpulsionCube", GetComponent<Transform>().position);
+            boom = false;
         }
 
         //playerPos = this.transform.position;
@@ -83,6 +90,7 @@ public class EquipScript : MonoBehaviour
             }
             else if (target != null && hit.transform.CompareTag("collectable"))
             {
+                // save data testers
                 if (hit.transform.name == "StarCollectable")
                 {
                     PD.col1 = true;
@@ -239,6 +247,7 @@ public class EquipScript : MonoBehaviour
         yield return new WaitForSeconds(5); // Wait for 5 seconds
 
         // Code to execute after 5 seconds
+        boom = true;
         PlayerTransform.DetachChildren();
 
         //repulsives start here

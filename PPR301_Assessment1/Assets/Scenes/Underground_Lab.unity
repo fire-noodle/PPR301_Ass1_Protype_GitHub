@@ -21927,6 +21927,8 @@ MonoBehaviour:
   lookSpeed: 2
   lookXLimit: 60
   canMove: 1
+  isWalking: 0
+  prev_pos: {x: 0, y: 0, z: 0}
   canZoom: 1
   timeToZoom: 0.12
   zoomLevel: 30
@@ -49278,6 +49280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1800755387}
+  - component: {fileID: 1800755388}
   m_Layer: 0
   m_Name: AudioMananger
   m_TagString: Untagged
@@ -49300,6 +49303,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1407858935}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1800755388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800755386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690a22e3534361444b562821696fa5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FootStepEvent:
+    Guid:
+      Data1: -2085626942
+      Data2: 1147480922
+      Data3: -1157189186
+      Data4: 918775371
+    Path: event:/Actions/Footsteps
+  rate: 0.5
+  player: {fileID: 819502199}
+  controller: {fileID: 819502200}
 --- !u!1 &1806825850
 GameObject:
   m_ObjectHideFlags: 0

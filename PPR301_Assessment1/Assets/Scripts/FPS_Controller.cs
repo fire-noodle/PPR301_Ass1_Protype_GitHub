@@ -20,6 +20,8 @@ public class FPS_Controller : MonoBehaviour
     float rotationX = 0;
 
     public bool canMove = true;
+    public bool isWalking;
+    public Vector3 prev_pos;
     public bool canZoom = true;
 
     private KeyCode zoomKey = KeyCode.Mouse1;
@@ -47,6 +49,9 @@ public class FPS_Controller : MonoBehaviour
 
     void Update()
 	{
+        isWalking = prev_pos != transform.position;
+        prev_pos = transform.position;
+
         #region Handles Movment
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);

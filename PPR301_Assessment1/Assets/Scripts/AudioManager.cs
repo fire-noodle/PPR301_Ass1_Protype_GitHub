@@ -15,13 +15,13 @@ public class AudioManager : MonoBehaviour
 	{
 		RuntimeManager.PlayOneShotAttached(FootStepEvent, player);
 	}
-	void update ()
+	void Update ()
 	{
 		time += Time.deltaTime;
-		//if (controller.isWalking) 
-			// there needs to be a public varabile called "is walking" in the FPS_Controller. something public and exposed
-			// stating the player is actively moving. 
+		if (controller.isWalking)
 		{
+			Debug.Log("footsteps play now");
+
 			if (time >= rate)
 			{
 				PlayFootStep();

@@ -16,7 +16,7 @@ public class AudioManager : MonoBehaviour
 	public void PlayFootStep()
 	{
 		if (Input.GetKey(KeyCode.LeftShift))
-		{ rate = 0.3f; }
+		{ rate = 0.4f; }
 		else { rate = 0.6f; }
 
 		RuntimeManager.PlayOneShotAttached(FootStepEvent, player);

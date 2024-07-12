@@ -26,6 +26,7 @@ public class EquipScript : MonoBehaviour
     public Door_Open_Conditional doc3;
     public PlayerData PD;
 
+    public GameObject Collectable_UI;
     public TMP_Text currentCollectablesUI;
     public int collectableNum = 0;
 
@@ -46,6 +47,8 @@ public class EquipScript : MonoBehaviour
     void Start()
     {
         Item1.GetComponent<Rigidbody>().isKinematic = true;
+
+        Collectable_UI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -136,6 +139,8 @@ public class EquipScript : MonoBehaviour
                 collectableNum ++;
                 currentCollectablesUI.text = collectableNum.ToString();
                 Collectable.SetActive(false);
+                Collectable_UI.SetActive(true);
+                StartCoroutine(UIText());
 
                 if (collectableNum == 4)
                 {
@@ -254,6 +259,13 @@ public class EquipScript : MonoBehaviour
         RC.Repulse();
         Item1.SetActive(false);
     }
+    IEnumerator UIText()
+    {
+        yield return new WaitForSeconds(5); // Wait for 5 seconds
+
+        Collectable_UI.SetActive(false);
+    }
+
 
     //public void SaveGame()
     //{

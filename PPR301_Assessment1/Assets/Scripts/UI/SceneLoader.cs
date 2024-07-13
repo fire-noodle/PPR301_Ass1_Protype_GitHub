@@ -1,37 +1,42 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
+using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
-    // The name or index of the scene to load asynchronously
-    public string sceneToLoad;
-
-    // The name or index of the next scene to load after the delay
-    public string nextScene;
+    public Button m_Button;
 
     void Start()
     {
-        // Start the coroutine to load the scene
-        StartCoroutine(LoadSceneAsync());
+        //Call the LoadButton() function when the user clicks this Button
+        m_Button.onClick.AddListener(LoadButton);
     }
 
-    IEnumerator LoadSceneAsync()
+    void LoadButton()
     {
-        //ButtonObject.onClick.Invoke();
-        // Start loading the scene asynchronously
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneToLoad);
+        //Start loading the Scene asynchronously and output the progress bar
+        StartCoroutine(LoadScene());
+    }
 
-        // Wait until the asynchronous scene fully loads
-        while (!asyncLoad.isDone)
+    public IEnumerator LoadScene()
+    {
+        yield return null;
+
+        //Begin to load the Scene you specify
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync("Underground_Lab");
+        //Don't let the Scene activate until you allow it to
+        asyncOperation.allowSceneActivation = false;
+        //When the load is still in progress, output the Text and progress bar
+        if (!asyncOperation.isDone)
         {
+            yield return new WaitForSeconds(10);
+            asyncOperation.allowSceneActivation = true;
+        }
             yield return null;
         }
 
-        // Wait for 5 seconds after the scene has loaded
-        yield return new WaitForSeconds(5);
-
-        // Load the next scene
-        SceneManager.LoadScene(nextScene);
-    }
 }
+
+
+

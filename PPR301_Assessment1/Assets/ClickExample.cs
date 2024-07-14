@@ -5,6 +5,9 @@ using System.Collections;
 public class ClickExample : MonoBehaviour
 {
     public Button yourButton;
+    public Button yourButton2;
+    //public Image yourImage;
+    //public Component yourFMODsound;
 
     void Start()
     {
@@ -12,9 +15,10 @@ public class ClickExample : MonoBehaviour
         btn.onClick.AddListener(TaskOnClick);
     }
 
-    void TaskOnClick()
-    {
-        Debug.Log("You have clicked the button!");
+    public void TaskOnClick()
+    { 
         yourButton.interactable = false;
+        yourButton2.interactable = false;
+        //yourImage.GetComponent<Image>().color = new Color32(255, 255, 225, 0);
     }
 }

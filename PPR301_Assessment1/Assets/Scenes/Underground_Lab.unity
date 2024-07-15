@@ -92,7 +92,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: e1254ea4364d9a4438aebbdcdc0d88ea, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: ed78f6d442da19c4d9a7366c6ed47595, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 464bcd89e61bdab4d92959458c901c63, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -3057,7 +3057,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: e838bf25f6016044faa96a166342058c, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: fca7d1b2ab0ecb9409a4d599f9fda4fa, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -3139,33 +3139,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 0.2839138
-    'sh[ 1]': 0.078181274
-    'sh[ 2]': -0.042077437
-    'sh[ 3]': -0.18243437
-    'sh[ 4]': -0.060735676
-    'sh[ 5]': -0.005324146
-    'sh[ 6]': -0.025732992
-    'sh[ 7]': 0.03737845
-    'sh[ 8]': 0.0874329
-    'sh[ 9]': 0.27020648
-    'sh[10]': 0.07440664
-    'sh[11]': -0.040045932
-    'sh[12]': -0.1736265
-    'sh[13]': -0.057803374
-    'sh[14]': -0.005067127
-    'sh[15]': -0.024490615
-    'sh[16]': 0.035573836
-    'sh[17]': 0.08321161
-    'sh[18]': 0.28343543
-    'sh[19]': 0.078049555
-    'sh[20]': -0.042006567
-    'sh[21]': -0.18212709
-    'sh[22]': -0.060633365
-    'sh[23]': -0.0053151753
-    'sh[24]': -0.025689643
-    'sh[25]': 0.037315484
-    'sh[26]': 0.0872856
+    'sh[ 0]': 0.43094632
+    'sh[ 1]': 0.044908524
+    'sh[ 2]': -0.018936984
+    'sh[ 3]': -0.046671703
+    'sh[ 4]': -0.047084305
+    'sh[ 5]': -0.028191902
+    'sh[ 6]': -0.039467692
+    'sh[ 7]': 0.06489128
+    'sh[ 8]': 0.16126135
+    'sh[ 9]': 0.4101479
+    'sh[10]': 0.042747267
+    'sh[11]': -0.018022068
+    'sh[12]': -0.044432476
+    'sh[13]': -0.044822715
+    'sh[14]': -0.026830273
+    'sh[15]': -0.03756464
+    'sh[16]': 0.061757274
+    'sh[17]': 0.1534802
+    'sh[18]': 0.430218
+    'sh[19]': 0.044830907
+    'sh[20]': -0.018905252
+    'sh[21]': -0.046589017
+    'sh[22]': -0.047001675
+    'sh[23]': -0.028144559
+    'sh[24]': -0.039400514
+    'sh[25]': 0.06478232
+    'sh[26]': 0.1609885
   m_SHValidForCapturePosition: {x: 97.37729, y: -16.538103, z: -34.534714}
   m_SHValidForSourcePosition: {x: 97.37729, y: -16.708103, z: -36.634712}
   m_HDProbeVersion: 9
@@ -3655,15 +3655,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a21f75e159413374fb95453526d87fe6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.209999
+      value: -12.26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a21f75e159413374fb95453526d87fe6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.87
+      value: 3.88
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a21f75e159413374fb95453526d87fe6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.9500008
+      value: 5.83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a21f75e159413374fb95453526d87fe6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3727,7 +3727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a21f75e159413374fb95453526d87fe6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a21f75e159413374fb95453526d87fe6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5079,7 +5079,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 18.696327}
+  m_BoundingSphereOverride: {x: 6.995e-42, y: 2.524355e-29, z: 0, w: 9e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -5304,7 +5304,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17585
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0.30902946, z: 0.9510525, w: 0}
+  m_BoundingSphereOverride: {x: 6.772e-42, y: 2.524355e-29, z: 0, w: 2.5828987e+29}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -6537,7 +6537,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 73f730c21743b6e499832f0b8dabf118, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 079aa9b767a7fea449893d5356827e28, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -6619,33 +6619,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 6317.5674
-    'sh[ 1]': 3068.783
-    'sh[ 2]': -2296.163
-    'sh[ 3]': 64.67454
-    'sh[ 4]': -89.70625
-    'sh[ 5]': -3291.2515
-    'sh[ 6]': -411.12442
-    'sh[ 7]': 48.16075
-    'sh[ 8]': -2273.7974
-    'sh[ 9]': 6125.551
-    'sh[10]': 2987.9163
-    'sh[11]': -2187.7073
-    'sh[12]': 94.092354
-    'sh[13]': -46.235123
-    'sh[14]': -3124.456
-    'sh[15]': -381.4207
-    'sh[16]': 45.86854
-    'sh[17]': -2163.2766
-    'sh[18]': 6643.0557
-    'sh[19]': 3268.2515
-    'sh[20]': -2290.498
-    'sh[21]': 151.37521
-    'sh[22]': 19.727766
-    'sh[23]': -3256.7217
-    'sh[24]': -401.42383
-    'sh[25]': 46.768196
-    'sh[26]': -2306.137
+    'sh[ 0]': 4414.7515
+    'sh[ 1]': 3078.1577
+    'sh[ 2]': -1125.0704
+    'sh[ 3]': -38.42826
+    'sh[ 4]': -12.000927
+    'sh[ 5]': -646.6631
+    'sh[ 6]': -66.615005
+    'sh[ 7]': -12.01448
+    'sh[ 8]': -350.28366
+    'sh[ 9]': 4383.291
+    'sh[10]': 2893.92
+    'sh[11]': -1117.1056
+    'sh[12]': 2.1699564
+    'sh[13]': -6.6221294
+    'sh[14]': -606.47687
+    'sh[15]': -63.861332
+    'sh[16]': -8.814765
+    'sh[17]': -337.95828
+    'sh[18]': 4491.6436
+    'sh[19]': 3329.6577
+    'sh[20]': -1089.6307
+    'sh[21]': 48.54178
+    'sh[22]': 3.5636775
+    'sh[23]': -662.5006
+    'sh[24]': -63.546482
+    'sh[25]': -3.605142
+    'sh[26]': -351.23022
   m_SHValidForCapturePosition: {x: 141.69037, y: -18.0387, z: -28.948849}
   m_SHValidForSourcePosition: {x: 141.69037, y: -18.0387, z: -28.948849}
   m_HDProbeVersion: 9
@@ -7508,7 +7508,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 117773da2a0691042a9f2371a2fe238f, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: cb08ecbc1f1e3aa42af1e4e56a9cfac4, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -7590,33 +7590,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 0.4813686
-    'sh[ 1]': 0.23315026
-    'sh[ 2]': -0.014439883
-    'sh[ 3]': 0.03884288
-    'sh[ 4]': 0.04467694
-    'sh[ 5]': -0.021121962
-    'sh[ 6]': -0.041433584
-    'sh[ 7]': -0.0029334174
-    'sh[ 8]': 0.0075870724
-    'sh[ 9]': 0.4788089
-    'sh[10]': 0.2571241
-    'sh[11]': -0.009133644
-    'sh[12]': 0.038326763
-    'sh[13]': 0.047310654
-    'sh[14]': -0.025314597
-    'sh[15]': -0.04566831
-    'sh[16]': -0.0007165811
-    'sh[17]': 0.0045858044
-    'sh[18]': 0.5783378
-    'sh[19]': 0.30891496
-    'sh[20]': -0.011293113
-    'sh[21]': 0.046044167
-    'sh[22]': 0.056867477
-    'sh[23]': -0.03068527
-    'sh[24]': -0.055096142
-    'sh[25]': -0.0006900647
-    'sh[26]': 0.005392503
+    'sh[ 0]': 0.50831014
+    'sh[ 1]': 0.22530065
+    'sh[ 2]': -0.0020085918
+    'sh[ 3]': 0.0748833
+    'sh[ 4]': 0.034155175
+    'sh[ 5]': -0.0089196
+    'sh[ 6]': -0.019997673
+    'sh[ 7]': 0.004688731
+    'sh[ 8]': 0.009651068
+    'sh[ 9]': 0.47773126
+    'sh[10]': 0.25854912
+    'sh[11]': -0.0034063482
+    'sh[12]': 0.06792654
+    'sh[13]': 0.03594508
+    'sh[14]': -0.008947096
+    'sh[15]': -0.025207806
+    'sh[16]': 0.010314373
+    'sh[17]': 0.0056754434
+    'sh[18]': 0.57645136
+    'sh[19]': 0.3107226
+    'sh[20]': -0.003759665
+    'sh[21]': 0.08308687
+    'sh[22]': 0.04372796
+    'sh[23]': -0.010955072
+    'sh[24]': -0.030371338
+    'sh[25]': 0.012831315
+    'sh[26]': 0.0068216217
   m_SHValidForCapturePosition: {x: 63.169994, y: -17.87, z: -15.969999}
   m_SHValidForSourcePosition: {x: 51.599995, y: -16.18, z: -15.969999}
   m_HDProbeVersion: 9
@@ -8228,7 +8228,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: -2.539162e+18, y: -3.124857e-21, z: 4e-45, w: 5.783802e-25}
+  m_BoundingSphereOverride: {x: 6.618e-42, y: 2.524355e-29, z: 0, w: 3172.3918}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -8836,7 +8836,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 2.3509887e-38, z: 0.0000000018773108, w: 0.0000000037252903}
+  m_BoundingSphereOverride: {x: 1.0291e-41, y: 2.524355e-29, z: 0, w: 4.8919697e+29}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -9301,7 +9301,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 2.209445e+38}
+  m_BoundingSphereOverride: {x: 7.339e-42, y: 2.524355e-29, z: 0, w: 6.639088e+29}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -9635,7 +9635,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 7735
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 7e-45, y: 1e-45, z: 1e-45, w: 1.6e-43}
+  m_BoundingSphereOverride: {x: 5.314e-42, y: 2.524355e-29, z: 0, w: 204069.19}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -10659,7 +10659,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0.05444336, y: -2.2403875e+24, z: -1.085012e-33, w: -32244400}
+  m_BoundingSphereOverride: {x: 8.834e-42, y: 2.524355e-29, z: 0, w: 1.3555836e-19}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -10699,6 +10699,8 @@ RectTransform:
   - {fileID: 263129119}
   - {fileID: 1241622102}
   - {fileID: 727012479}
+  - {fileID: 1908366992}
+  - {fileID: 1596154395}
   - {fileID: 543999879}
   - {fileID: 1539190040}
   - {fileID: 831116721}
@@ -13489,7 +13491,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 61b8887a5c8ef8d4797a2028a53e081d, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 29afac6258c49194c92b1402ae94d2e5, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -13571,33 +13573,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 0.22169915
-    'sh[ 1]': 0.04299039
-    'sh[ 2]': 0.061549515
-    'sh[ 3]': 0.14661257
-    'sh[ 4]': 0.022534436
-    'sh[ 5]': 0.0030429778
-    'sh[ 6]': -0.004712292
-    'sh[ 7]': 0.033416983
-    'sh[ 8]': 0.017221132
-    'sh[ 9]': 0.20039017
-    'sh[10]': 0.044980224
-    'sh[11]': 0.051230855
-    'sh[12]': 0.13557644
-    'sh[13]': 0.023361422
-    'sh[14]': 0.0058301026
-    'sh[15]': -0.0049545756
-    'sh[16]': 0.028351042
-    'sh[17]': 0.015735893
-    'sh[18]': 0.21272539
-    'sh[19]': 0.04590331
-    'sh[20]': 0.0549487
-    'sh[21]': 0.14035407
-    'sh[22]': 0.025321737
-    'sh[23]': 0.006089669
-    'sh[24]': -0.0052028177
-    'sh[25]': 0.029358689
-    'sh[26]': 0.0169165
+    'sh[ 0]': 0.21839322
+    'sh[ 1]': 0.027545912
+    'sh[ 2]': 0.034211364
+    'sh[ 3]': 0.13113582
+    'sh[ 4]': 0.012739295
+    'sh[ 5]': -0.00000787208
+    'sh[ 6]': -0.0025052114
+    'sh[ 7]': 0.010424916
+    'sh[ 8]': 0.011140162
+    'sh[ 9]': 0.19985726
+    'sh[10]': 0.030565672
+    'sh[11]': 0.025392935
+    'sh[12]': 0.122719444
+    'sh[13]': 0.012404786
+    'sh[14]': 0.0019811275
+    'sh[15]': -0.0027475262
+    'sh[16]': 0.009711556
+    'sh[17]': 0.010748282
+    'sh[18]': 0.23074648
+    'sh[19]': 0.02777641
+    'sh[20]': 0.020693496
+    'sh[21]': 0.1097277
+    'sh[22]': 0.016192075
+    'sh[23]': 0.0026923476
+    'sh[24]': -0.0037841506
+    'sh[25]': 0.012731348
+    'sh[26]': 0.013774021
   m_SHValidForCapturePosition: {x: 93.41905, y: -16.99, z: -22}
   m_SHValidForSourcePosition: {x: 93.41905, y: -17.16, z: -24.1}
   m_HDProbeVersion: 9
@@ -14828,7 +14830,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: NaN}
+  m_BoundingSphereOverride: {x: 2.65628e+20, y: 7.5318855e-31, z: 9.102061e-12, w: 1.10171565e+24}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -15123,7 +15125,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: NaN, z: 0, w: 1.5593874e+30}
+  m_BoundingSphereOverride: {x: 1.0829418e+24, y: 4.8418473e+30, z: 2.3750396e+20, w: 6.573344e+28}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -15388,7 +15390,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 5.4596653e-31, y: 1.3563128e-19, z: 1.4993883e+10, w: 1.7411202e+25}
+  m_BoundingSphereOverride: {x: 8.305e-42, y: 2.524355e-29, z: 0, w: 3.097268e+27}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -15624,7 +15626,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 0ce4dc708ca0f624eb76402ff600a38b, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 46456db9816acc14ea89b8844c129a06, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -15706,33 +15708,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 0.17250055
-    'sh[ 1]': 0.039713662
-    'sh[ 2]': 0.14769644
-    'sh[ 3]': 0.00028422746
-    'sh[ 4]': 0.00025241214
-    'sh[ 5]': 0.018001601
-    'sh[ 6]': 0.009180796
-    'sh[ 7]': -0.00067232124
-    'sh[ 8]': -0.0023718541
-    'sh[ 9]': 0.16466555
-    'sh[10]': 0.03755524
-    'sh[11]': 0.14097376
-    'sh[12]': 0.0004262494
-    'sh[13]': 0.00021993376
-    'sh[14]': 0.01704833
-    'sh[15]': 0.008745651
-    'sh[16]': -0.0006538813
-    'sh[17]': -0.0022615418
-    'sh[18]': 0.19091211
-    'sh[19]': 0.033400413
-    'sh[20]': 0.1593305
-    'sh[21]': 0.0057401177
-    'sh[22]': 0.00024190066
-    'sh[23]': 0.015519596
-    'sh[24]': 0.009524833
-    'sh[25]': 0.000032238044
-    'sh[26]': -0.0018629619
+    'sh[ 0]': 0.14386502
+    'sh[ 1]': 0.021871079
+    'sh[ 2]': 0.11803246
+    'sh[ 3]': -0.0014998757
+    'sh[ 4]': 0.0012582178
+    'sh[ 5]': 0.009139556
+    'sh[ 6]': 0.007102235
+    'sh[ 7]': -0.00053505984
+    'sh[ 8]': -0.0016850224
+    'sh[ 9]': 0.13884893
+    'sh[10]': 0.019820131
+    'sh[11]': 0.113591395
+    'sh[12]': -0.0010329686
+    'sh[13]': 0.001172929
+    'sh[14]': 0.008398551
+    'sh[15]': 0.006810455
+    'sh[16]': -0.00053238735
+    'sh[17]': -0.0015975854
+    'sh[18]': 0.19952983
+    'sh[19]': -0.0040575606
+    'sh[20]': 0.1559323
+    'sh[21]': 0.0044867615
+    'sh[22]': -0.00077548885
+    'sh[23]': 0.0018580307
+    'sh[24]': 0.008579329
+    'sh[25]': -0.0027632162
+    'sh[26]': -0.0013906689
   m_SHValidForCapturePosition: {x: 117.3056, y: -17.850183, z: -15.07}
   m_SHValidForSourcePosition: {x: 117.3056, y: -17.850183, z: -15.07}
   m_HDProbeVersion: 9
@@ -16844,7 +16846,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 7735
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.3563156e-19, y: 1.3563156e-19, z: 3.756121e-14, w: 9.8439425e-12}
+  m_BoundingSphereOverride: {x: 8.942e-42, y: 2.524355e-29, z: 0, w: 1.57879e-19}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -18374,7 +18376,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 7735
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 9.8439425e-12, y: 3.539601e-20, z: 1.3562824e-19, w: 1.3563156e-19}
+  m_BoundingSphereOverride: {x: 4.687e-42, y: 2.524355e-29, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -18629,7 +18631,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 7735
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 9.8439425e-12, y: 9.8439425e-12, z: 9.8439425e-12, w: 9.8439425e-12}
+  m_BoundingSphereOverride: {x: 6.87e-43, y: 1.57e-43, z: 0, w: 4.3e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -18850,7 +18852,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 8480e6c075a02f149b13c9dd52163a7c, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: d074047600ac3034badc1f0e7c1db656, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -18932,33 +18934,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 1070.9917
-    'sh[ 1]': 798.51086
-    'sh[ 2]': -689.6914
-    'sh[ 3]': -118.16202
-    'sh[ 4]': -39.077415
-    'sh[ 5]': -220.94084
-    'sh[ 6]': 10.013755
-    'sh[ 7]': 35.62221
-    'sh[ 8]': -68.62651
-    'sh[ 9]': 911.6046
-    'sh[10]': 670.9269
-    'sh[11]': -640.46765
-    'sh[12]': -111.646194
-    'sh[13]': -36.22311
-    'sh[14]': -204.83711
-    'sh[15]': 12.615022
-    'sh[16]': 33.45148
-    'sh[17]': -55.051258
-    'sh[18]': 956.25183
-    'sh[19]': 703.7705
-    'sh[20]': -671.8188
-    'sh[21]': -117.1183
-    'sh[22]': -37.996075
-    'sh[23]': -214.8664
-    'sh[24]': 13.232676
-    'sh[25]': 35.08848
-    'sh[26]': -57.74661
+    'sh[ 0]': 1065.3619
+    'sh[ 1]': 801.65717
+    'sh[ 2]': -685.148
+    'sh[ 3]': -114.44597
+    'sh[ 4]': -37.312706
+    'sh[ 5]': -221.32848
+    'sh[ 6]': 10.037998
+    'sh[ 7]': 35.215084
+    'sh[ 8]': -67.8088
+    'sh[ 9]': 909.9845
+    'sh[10]': 672.0722
+    'sh[11]': -639.83276
+    'sh[12]': -111.57106
+    'sh[13]': -36.15485
+    'sh[14]': -204.94608
+    'sh[15]': 12.618056
+    'sh[16]': 33.47941
+    'sh[17]': -54.919674
+    'sh[18]': 954.54254
+    'sh[19]': 704.9766
+    'sh[20]': -671.16187
+    'sh[21]': -117.03735
+    'sh[22]': -37.924503
+    'sh[23]': -214.97987
+    'sh[24]': 13.236121
+    'sh[25]': 35.117516
+    'sh[26]': -57.608128
   m_SHValidForCapturePosition: {x: 72.7016, y: -7.912671, z: 7.775288}
   m_SHValidForSourcePosition: {x: 73.1416, y: -7.912671, z: 7.775288}
   m_HDProbeVersion: 9
@@ -20702,7 +20704,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 7735
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 7.6448587e+21, y: 2.3107543e+36, z: NaN, w: 4.0344616e+31}
+  m_BoundingSphereOverride: {x: 6.87e-43, y: 1.5e-43, z: 0, w: 4.3e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -23201,7 +23203,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 223b5bf2280b98b4092f1bf01e18d2c4, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 5d260d15987af5040b4950d5268ba1e4, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -23283,33 +23285,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 13.43742
-    'sh[ 1]': 12.954561
-    'sh[ 2]': -3.8824909
-    'sh[ 3]': -2.9937108
-    'sh[ 4]': -1.2331051
-    'sh[ 5]': -1.6062715
-    'sh[ 6]': -0.37459263
-    'sh[ 7]': 0.36909142
-    'sh[ 8]': -1.2634112
-    'sh[ 9]': 12.7898035
-    'sh[10]': 12.327086
-    'sh[11]': -3.695209
-    'sh[12]': -2.8493974
-    'sh[13]': -1.1734736
-    'sh[14]': -1.5285751
-    'sh[15]': -0.35644397
-    'sh[16]': 0.3512395
-    'sh[17]': -1.2025105
-    'sh[18]': 13.476403
-    'sh[19]': 12.887124
-    'sh[20]': -3.8884606
-    'sh[21]': -2.993102
-    'sh[22]': -1.229872
-    'sh[23]': -1.5997448
-    'sh[24]': -0.37341687
-    'sh[25]': 0.36533463
-    'sh[26]': -1.2645825
+    'sh[ 0]': 13.467112
+    'sh[ 1]': 12.951065
+    'sh[ 2]': -3.8731537
+    'sh[ 3]': -2.9736779
+    'sh[ 4]': -1.2240448
+    'sh[ 5]': -1.5953171
+    'sh[ 6]': -0.37327114
+    'sh[ 7]': 0.36655614
+    'sh[ 8]': -1.2665149
+    'sh[ 9]': 12.815077
+    'sh[10]': 12.324147
+    'sh[11]': -3.68633
+    'sh[12]': -2.8299787
+    'sh[13]': -1.1652077
+    'sh[14]': -1.5186303
+    'sh[15]': -0.35545704
+    'sh[16]': 0.3488716
+    'sh[17]': -1.205435
+    'sh[18]': 13.501069
+    'sh[19]': 12.885712
+    'sh[20]': -3.857271
+    'sh[21]': -2.960167
+    'sh[22]': -1.2248971
+    'sh[23]': -1.595731
+    'sh[24]': -0.3728763
+    'sh[25]': 0.36879298
+    'sh[26]': -1.2676439
   m_SHValidForCapturePosition: {x: 114.19386, y: -16.602497, z: 6.630998}
   m_SHValidForSourcePosition: {x: 114.19386, y: -16.602497, z: 6.630998}
   m_HDProbeVersion: 9
@@ -25518,7 +25520,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 7735
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: -1.2647854e-11, y: 1.2561645e+31, z: -1.3197587, w: 3.0035129e+31}
+  m_BoundingSphereOverride: {x: 6.87e-43, y: 1.53e-43, z: 0, w: 4.3e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -25943,7 +25945,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3690d533d161eac43ae2af7d17c4ca44, type: 2}
+  - {fileID: 2100000, guid: d44daf509ea7e514cbae2cf14ef1ed7d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26409,7 +26411,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 283995a93392af640a1fbfd8d732610b, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 21f2fa8ffc5304d4da568cfc62b126b7, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -26491,33 +26493,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 499.4145
-    'sh[ 1]': -6.9789033
-    'sh[ 2]': 173.78764
-    'sh[ 3]': 89.56359
-    'sh[ 4]': -12.021954
-    'sh[ 5]': -6.9966755
-    'sh[ 6]': 7.023297
-    'sh[ 7]': -32.317158
-    'sh[ 8]': 20.783886
-    'sh[ 9]': 389.98688
-    'sh[10]': -3.8967068
-    'sh[11]': 128.69276
-    'sh[12]': 131.37364
-    'sh[13]': -10.391683
-    'sh[14]': 1.0703298
-    'sh[15]': 3.663757
-    'sh[16]': -24.16706
-    'sh[17]': 18.473967
-    'sh[18]': 363.63467
-    'sh[19]': 19.252851
-    'sh[20]': 108.23864
-    'sh[21]': 162.77147
-    'sh[22]': -13.174334
-    'sh[23]': 10.083057
-    'sh[24]': 0.48977888
-    'sh[25]': -17.235285
-    'sh[26]': 18.351053
+    'sh[ 0]': 426.8921
+    'sh[ 1]': 83.33248
+    'sh[ 2]': 282.84183
+    'sh[ 3]': -24.988367
+    'sh[ 4]': -13.123164
+    'sh[ 5]': 30.778244
+    'sh[ 6]': 32.29223
+    'sh[ 7]': -53.517212
+    'sh[ 8]': -4.111892
+    'sh[ 9]': 342.17993
+    'sh[10]': 80.852905
+    'sh[11]': 197.1402
+    'sh[12]': 16.11373
+    'sh[13]': -12.055813
+    'sh[14]': 36.53851
+    'sh[15]': 22.597311
+    'sh[16]': -47.675102
+    'sh[17]': -2.0179408
+    'sh[18]': 313.91364
+    'sh[19]': 107.30013
+    'sh[20]': 163.90735
+    'sh[21]': 15.8483305
+    'sh[22]': -17.900362
+    'sh[23]': 50.107586
+    'sh[24]': 16.654827
+    'sh[25]': -36.106678
+    'sh[26]': -4.545574
   m_SHValidForCapturePosition: {x: 130.51642, y: -17.500183, z: -25.800842}
   m_SHValidForSourcePosition: {x: 128.24641, y: -17.850183, z: -26.500843}
   m_HDProbeVersion: 9
@@ -27934,7 +27936,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: be873ebbb11e3c04f83f7cf20fbcfc56, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 54895069f4cd46f469d8cf009c3041ac, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -28016,33 +28018,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 35.64311
-    'sh[ 1]': 21.564234
-    'sh[ 2]': -6.0101666
-    'sh[ 3]': 18.474041
-    'sh[ 4]': 5.154483
-    'sh[ 5]': -2.6697588
-    'sh[ 6]': -1.5948052
-    'sh[ 7]': -1.7326812
-    'sh[ 8]': -2.8331196
-    'sh[ 9]': 17.511269
-    'sh[10]': 10.5537195
-    'sh[11]': -1.2363453
-    'sh[12]': 8.9610405
-    'sh[13]': 2.5164435
-    'sh[14]': -0.53971434
-    'sh[15]': -0.82784635
-    'sh[16]': -0.40117943
-    'sh[17]': -1.4991487
-    'sh[18]': 10.098525
-    'sh[19]': 10.21881
-    'sh[20]': 0.907061
-    'sh[21]': 5.2313466
-    'sh[22]': 2.545115
-    'sh[23]': 0.45596904
-    'sh[24]': -0.5241397
-    'sh[25]': 0.20624922
-    'sh[26]': -0.9199427
+    'sh[ 0]': 67.14172
+    'sh[ 1]': 62.03958
+    'sh[ 2]': -14.554641
+    'sh[ 3]': 5.550498
+    'sh[ 4]': 4.210272
+    'sh[ 5]': -5.752011
+    'sh[ 6]': -2.7238033
+    'sh[ 7]': 0.90421486
+    'sh[ 8]': -4.9991627
+    'sh[ 9]': 28.376827
+    'sh[10]': 26.21247
+    'sh[11]': -4.241285
+    'sh[12]': 6.155167
+    'sh[13]': 3.230792
+    'sh[14]': -1.552629
+    'sh[15]': -1.2210104
+    'sh[16]': 0.1856818
+    'sh[17]': -2.3811533
+    'sh[18]': 12.016875
+    'sh[19]': 7.713338
+    'sh[20]': 0.08599761
+    'sh[21]': 6.988353
+    'sh[22]': 1.5260276
+    'sh[23]': 0.20234708
+    'sh[24]': -0.63149
+    'sh[25]': -0.009980428
+    'sh[26]': -0.7943697
   m_SHValidForCapturePosition: {x: 81.78719, y: -17.597992, z: -6.920575}
   m_SHValidForSourcePosition: {x: 88.31719, y: -16.487991, z: -7.2005754}
   m_HDProbeVersion: 9
@@ -28825,7 +28827,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: -6.645947e-11, y: 4e-45, z: -5.7807727e-27, w: 2163.263}
+  m_BoundingSphereOverride: {x: 6.87e-43, y: 1.53e-43, z: 0, w: 4.3e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -29556,7 +29558,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: db4b7d9dc7480e54cb1a69e50ab1fc31, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 0dfae3ad5fd9ad54abc3d64f3b1a28a8, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -29638,33 +29640,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 5077.3457
-    'sh[ 1]': 3132.888
-    'sh[ 2]': -1479.8422
-    'sh[ 3]': 89.18029
-    'sh[ 4]': -80.536194
-    'sh[ 5]': -1622.3193
-    'sh[ 6]': -199.39311
-    'sh[ 7]': 37.846928
-    'sh[ 8]': -1065.7902
-    'sh[ 9]': 4762.893
-    'sh[10]': 3088.4739
-    'sh[11]': -1388.0612
-    'sh[12]': 46.62129
-    'sh[13]': -73.98305
-    'sh[14]': -1569.8503
-    'sh[15]': -183.07545
-    'sh[16]': 35.54004
-    'sh[17]': -1010.39075
-    'sh[18]': 5007.2656
-    'sh[19]': 3358.329
-    'sh[20]': -1436.7523
-    'sh[21]': 0.7039402
-    'sh[22]': -81.5702
-    'sh[23]': -1669.7566
-    'sh[24]': -190.61069
-    'sh[25]': 33.377262
-    'sh[26]': -1078.3329
+    'sh[ 0]': 5159.2695
+    'sh[ 1]': 3163.2915
+    'sh[ 2]': -1549.4832
+    'sh[ 3]': 15.592657
+    'sh[ 4]': -61.95346
+    'sh[ 5]': -1729.3054
+    'sh[ 6]': -212.39503
+    'sh[ 7]': 53.44434
+    'sh[ 8]': -1132.9081
+    'sh[ 9]': 4840.836
+    'sh[10]': 3119.6099
+    'sh[11]': -1454.6285
+    'sh[12]': -24.04925
+    'sh[13]': -56.202705
+    'sh[14]': -1673.1239
+    'sh[15]': -194.92113
+    'sh[16]': 50.7185
+    'sh[17]': -1073.9727
+    'sh[18]': 5089.501
+    'sh[19]': 3393.46
+    'sh[20]': -1507.5985
+    'sh[21]': -74.44069
+    'sh[22]': -63.216343
+    'sh[23]': -1779.4386
+    'sh[24]': -202.8369
+    'sh[25]': 49.53219
+    'sh[26]': -1146.3267
   m_SHValidForCapturePosition: {x: 93.10193, y: -8.388259, z: 1.2735152}
   m_SHValidForSourcePosition: {x: 89.07193, y: -1.5482588, z: 0.9635153}
   m_HDProbeVersion: 9
@@ -30859,7 +30861,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 3.2568642e-18, y: -1.4777313e-34, z: -6.0280366e-12, w: 1.1860077e-38}
+  m_BoundingSphereOverride: {x: 5.3065872e-37, y: 0, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -32705,7 +32707,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: c005ba350bcaa54449855350706c1025, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 6f85c6f0f0dd79b4e82eefbcbf4ebf28, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -32787,33 +32789,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 0.25277334
-    'sh[ 1]': 0.036539447
-    'sh[ 2]': -0.031138482
-    'sh[ 3]': 0.1480959
-    'sh[ 4]': 0.015441231
-    'sh[ 5]': -0.00777522
-    'sh[ 6]': -0.008120396
-    'sh[ 7]': -0.003866877
-    'sh[ 8]': 0.007894517
-    'sh[ 9]': 0.24146444
-    'sh[10]': 0.034258362
-    'sh[11]': -0.029540164
-    'sh[12]': 0.1411706
-    'sh[13]': 0.0146271605
-    'sh[14]': -0.007361227
-    'sh[15]': -0.0077573163
-    'sh[16]': -0.0038408928
-    'sh[17]': 0.007580503
-    'sh[18]': 0.2782073
-    'sh[19]': 0.024363479
-    'sh[20]': -0.030775147
-    'sh[21]': 0.15075256
-    'sh[22]': 0.013180979
-    'sh[23]': -0.0086109955
-    'sh[24]': -0.00836486
-    'sh[25]': -0.00512319
-    'sh[26]': 0.009335868
+    'sh[ 0]': 0.21994829
+    'sh[ 1]': 0.039387196
+    'sh[ 2]': -0.029475575
+    'sh[ 3]': 0.124039076
+    'sh[ 4]': 0.013135197
+    'sh[ 5]': -0.0062157842
+    'sh[ 6]': -0.0051051206
+    'sh[ 7]': -0.00888722
+    'sh[ 8]': 0.0028354777
+    'sh[ 9]': 0.20975175
+    'sh[10]': 0.03742927
+    'sh[11]': -0.027926808
+    'sh[12]': 0.11785346
+    'sh[13]': 0.012585271
+    'sh[14]': -0.005934822
+    'sh[15]': -0.004867852
+    'sh[16]': -0.008422723
+    'sh[17]': 0.0027247733
+    'sh[18]': 0.23642159
+    'sh[19]': 0.033474408
+    'sh[20]': -0.028218858
+    'sh[21]': 0.12939571
+    'sh[22]': 0.012182609
+    'sh[23]': -0.00654219
+    'sh[24]': -0.0053815255
+    'sh[25]': -0.0065538804
+    'sh[26]': 0.0038003838
   m_SHValidForCapturePosition: {x: 110.93, y: -17.600183, z: 2.2952878}
   m_SHValidForSourcePosition: {x: 108.13, y: -17.850183, z: -0.6747122}
   m_HDProbeVersion: 9
@@ -34804,7 +34806,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17585
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 5.7646072e+17, y: 0, z: 1.8e-43, w: 0}
+  m_BoundingSphereOverride: {x: 6.87e-43, y: 1.51e-43, z: 0, w: 4.3e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -36660,7 +36662,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 2.3509887e-38, y: 131108, z: 7.737128e+25, w: -Infinity}
+  m_BoundingSphereOverride: {x: 0, y: 2.3509887e-38, z: 33558530, w: -8.881784e-16}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -36915,7 +36917,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 8.8e-44, y: 0, z: 9.1e-44, w: 9.2e-44}
+  m_BoundingSphereOverride: {x: 3.7307655e-20, y: 3.030676e-39, z: 6.541e-42, w: 3.097268e+27}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -37276,7 +37278,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1.193861e-39, y: 9.1835e-41, z: 1.1e-44, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -38505,6 +38507,7 @@ Transform:
   - {fileID: 1837960929}
   - {fileID: 347375401}
   - {fileID: 1797067709}
+  - {fileID: 1453616309}
   m_Father: {fileID: 2197189}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1417153787
@@ -39073,7 +39076,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 2.6562882e+20, y: 1.8879014e+31, z: 4.3973473e+21, w: 2.4805945e+27}
+  m_BoundingSphereOverride: {x: 6.788e-42, y: 3.67342e-40, z: 6.356e-42, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -39540,7 +39543,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 658b88ac87744584f8dbd1ddb6987223, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 7e0c572613607ec47b08444409697ca4, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -39622,33 +39625,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 70.55108
-    'sh[ 1]': 49.808823
-    'sh[ 2]': 3.3026514
-    'sh[ 3]': -43.48649
-    'sh[ 4]': -14.120682
-    'sh[ 5]': 1.5725389
-    'sh[ 6]': -2.235366
-    'sh[ 7]': -1.019566
-    'sh[ 8]': -1.4878278
-    'sh[ 9]': 67.347015
-    'sh[10]': 47.50154
-    'sh[11]': 3.143947
-    'sh[12]': -41.44017
-    'sh[13]': -13.461285
-    'sh[14]': 1.497115
-    'sh[15]': -2.133639
-    'sh[16]': -0.9699629
-    'sh[17]': -1.4302878
-    'sh[18]': 70.43494
-    'sh[19]': 49.721153
-    'sh[20]': 3.2947767
-    'sh[21]': -43.413704
-    'sh[22]': -14.097475
-    'sh[23]': 1.5715135
-    'sh[24]': -2.2315023
-    'sh[25]': -1.0176436
-    'sh[26]': -1.4858012
+    'sh[ 0]': 68.944725
+    'sh[ 1]': 49.93631
+    'sh[ 2]': 3.2465453
+    'sh[ 3]': -42.84766
+    'sh[ 4]': -14.064395
+    'sh[ 5]': 1.4292957
+    'sh[ 6]': -2.3266134
+    'sh[ 7]': -1.106044
+    'sh[ 8]': -1.600461
+    'sh[ 9]': 64.721466
+    'sh[10]': 47.493988
+    'sh[11]': 3.2165074
+    'sh[12]': -40.639652
+    'sh[13]': -13.377442
+    'sh[14]': 1.371187
+    'sh[15]': -2.2793417
+    'sh[16]': -1.0305085
+    'sh[17]': -1.563998
+    'sh[18]': 65.870995
+    'sh[19]': 49.70495
+    'sh[20]': 3.3000834
+    'sh[21]': -42.1285
+    'sh[22]': -14.003861
+    'sh[23]': 1.4874439
+    'sh[24]': -2.4725862
+    'sh[25]': -0.986579
+    'sh[26]': -1.6678756
   m_SHValidForCapturePosition: {x: 90.13193, y: -6.721482, z: 15.314287}
   m_SHValidForSourcePosition: {x: 89.07193, y: -7.6114817, z: 15.084288}
   m_HDProbeVersion: 9
@@ -40020,6 +40023,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450892041}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1453616308
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1416556454}
+    m_Modifications:
+    - target: {fileID: 4370602778756554847, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_Name
+      value: ConstructionDoor_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4482561553839100439, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 4482561553839100439, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0278919
+      objectReference: {fileID: 0}
+    - target: {fileID: 4482561553839100439, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.249
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392772032520516352, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.701477
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392772032520516352, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -20.025284
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392772032520516352, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.860634
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392772032520516352, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392772032520516352, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392772032520516352, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0000014603138
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392772032520516352, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392772032520516352, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392772032520516352, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392772032520516352, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+--- !u!4 &1453616309 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6392772032520516352, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+  m_PrefabInstance: {fileID: 1453616308}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1457997782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40460,33 +40537,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 0.020712506
-    'sh[ 1]': 0.0006223739
-    'sh[ 2]': 0.015995737
-    'sh[ 3]': 0.0029225997
-    'sh[ 4]': -0.0006260178
-    'sh[ 5]': -0.0006974621
-    'sh[ 6]': 0.0010914014
-    'sh[ 7]': 0.0018500829
-    'sh[ 8]': -0.000108459164
-    'sh[ 9]': 0.017334113
-    'sh[10]': 0.00060858094
-    'sh[11]': 0.012444623
-    'sh[12]': 0.0025671741
-    'sh[13]': -0.00060188054
-    'sh[14]': -0.0006459758
-    'sh[15]': 0.00077771797
-    'sh[16]': 0.001641761
-    'sh[17]': -0.00009742089
-    'sh[18]': 0.022311965
-    'sh[19]': 0.0007952482
-    'sh[20]': 0.01594532
-    'sh[21]': 0.00039057064
-    'sh[22]': -0.0006751739
-    'sh[23]': -0.00070575235
-    'sh[24]': 0.001032059
-    'sh[25]': 0.0006567439
-    'sh[26]': 0.000092379436
+    'sh[ 0]': 0.019097717
+    'sh[ 1]': 0.0048064077
+    'sh[ 2]': 0.009900791
+    'sh[ 3]': 0.0019832868
+    'sh[ 4]': 0.00042807846
+    'sh[ 5]': -0.0005777369
+    'sh[ 6]': 0.0007984737
+    'sh[ 7]': 0.00032425259
+    'sh[ 8]': -0.0011997999
+    'sh[ 9]': 0.0141972825
+    'sh[10]': 0.004879242
+    'sh[11]': 0.0040631522
+    'sh[12]': 0.00009392512
+    'sh[13]': 0.00048863544
+    'sh[14]': -0.0003301918
+    'sh[15]': 0.00024401335
+    'sh[16]': -0.0010704617
+    'sh[17]': -0.0012408448
+    'sh[18]': 0.0220791
+    'sh[19]': 0.0046013338
+    'sh[20]': -0.0033272316
+    'sh[21]': 0.003023927
+    'sh[22]': 0.00047985138
+    'sh[23]': -0.000036794125
+    'sh[24]': 0.0009161625
+    'sh[25]': -0.0031559132
+    'sh[26]': -0.0009071772
   m_SHValidForCapturePosition: {x: 105.18928, y: -18.705112, z: -29.266052}
   m_SHValidForSourcePosition: {x: 103.666534, y: -18.73333, z: -29.266052}
   m_HDProbeVersion: 9
@@ -40836,7 +40913,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 2.3509887e-38, z: -2.3059837e+18, w: 5.820766e-11}
+  m_BoundingSphereOverride: {x: 6.87e-43, y: 1.57e-43, z: 0, w: 4.3e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -40919,7 +40996,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 2.7105054e-20, y: 5.51075e-40, z: 4.512e-42, w: 4e-45}
+  m_BoundingSphereOverride: {x: 1.5777406e-19, y: 1.1730476e-19, z: 57197.125, w: 3.8491507e+9}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -42078,7 +42155,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 7735
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 2.7105054e-20, y: 1.83733e-40, z: 5.25e-42, w: 4e-45}
+  m_BoundingSphereOverride: {x: 4.065841e-20, y: 2.204114e-39, z: 1.0291e-41, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -42942,7 +43019,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17585
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 6.015247e-39, y: 9.1835e-41, z: 4.591775e-39, w: 1.1942202e-38}
+  m_BoundingSphereOverride: {x: 1.469367e-39, y: -2.015625, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -43199,7 +43276,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ill
+  m_text: 'Martin Luther King Jr.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -43264,7 +43343,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -2.3738365, y: 0, z: -5.436408, w: 0}
+  m_margin: {x: -8.885703, y: 0, z: -5.436408, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -43326,15 +43405,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539190037}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000026375053}
-  m_LocalPosition: {x: 0, y: 0, z: -247.71826}
-  m_LocalScale: {x: 0.14306022, y: 0.14306022, z: 0.14306022}
+  m_LocalPosition: {x: 0, y: 0, z: -247.709}
+  m_LocalScale: {x: 0.08868733, y: 0.08868733, z: 0.08868733}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 329562256}
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 841.73737, y: -249.2172}
+  m_AnchoredPosition: {x: 841.41974, y: -249.183}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1545972788
@@ -43568,7 +43647,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 6.015247e-39, y: 6.42848e-40, z: -5.326459e-39, w: 9.188e-41}
+  m_BoundingSphereOverride: {x: 9.1835e-41, y: 5.1134018e-37, z: 9.78048e-39, w: 7.80602e-40}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -44259,6 +44338,182 @@ Transform:
   m_Children: []
   m_Father: {fileID: 838284985}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1596154394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1596154395}
+  - component: {fileID: 1596154397}
+  - component: {fileID: 1596154396}
+  m_Layer: 0
+  m_Name: Text (TMP) (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1596154395
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596154394}
+  m_LocalRotation: {x: -0, y: 0.00000034272668, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -186.39}
+  m_LocalScale: {x: 0.1017064, y: 0.1017064, z: 0.1017064}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 329562256}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 866.471, y: -250.50096}
+  m_SizeDelta: {x: 20, y: 5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1596154396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596154394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Micah Cop
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 0
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -2.3738365, y: 0, z: -5.436408, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 1596154397}
+  m_maskType: 0
+--- !u!23 &1596154397
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596154394}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1602776416
 GameObject:
   m_ObjectHideFlags: 0
@@ -44475,7 +44730,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 840789.94, y: 3.37766e+9, z: 1.1e-43, w: 1.5e-44}
+  m_BoundingSphereOverride: {x: 4.664e-42, y: 3.92095e-40, z: 4.484e-42, w: 7.17e-43}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -44855,6 +45110,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1050430076}
     m_Modifications:
+    - target: {fileID: -9217026832821543489, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -9213251848868656692, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -45167,6 +45426,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: e70135fcb5b76ea49a63529934e9a1ae, type: 2}
+    - target: {fileID: -7035264413063001139, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -6879185134579169503, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -45335,6 +45598,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: -5886352270988387167, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -5857008799076929059, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -45371,6 +45638,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: 2100000, guid: 8fc696f553626f84ab384342f84de6f4, type: 2}
+    - target: {fileID: -5751156907700066240, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -5735604692362716703, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -45434,6 +45705,10 @@ PrefabInstance:
     - target: {fileID: -5204813435383195650, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: -5131329939248114528, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -5119101871893595362, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -45856,12 +46131,20 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -3349968299760867022, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -3349968299760867022, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 2748d02440233284ab844281c57834a0, type: 2}
     - target: {fileID: -3343918999126949522, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3265238297991819989, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -3265238297991819989, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -45878,6 +46161,10 @@ PrefabInstance:
     - target: {fileID: -3182702469080854632, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3144019208086294248, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -3144019208086294248, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -45898,6 +46185,10 @@ PrefabInstance:
     - target: {fileID: -3088385398685551339, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3065465296515230621, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -3061086268903500465, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -46103,6 +46394,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 3b0672854dbec8d43a568cd392950215, type: 2}
+    - target: {fileID: -1580115388875877204, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -1580115388875877204, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -46365,7 +46660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -421124539091913167, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_ScaleInLightmap
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -421124539091913167, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -46555,6 +46850,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: e70135fcb5b76ea49a63529934e9a1ae, type: 2}
+    - target: {fileID: 527660475289400273, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8e1db9e89703f934bb959e324fd2b2d8, type: 2}
+    - target: {fileID: 527660475289400273, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f5e95f602fd156047af0f5d2872cfa2d, type: 2}
+    - target: {fileID: 527660475289400273, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: 'm_Materials.Array.data[4]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8e1db9e89703f934bb959e324fd2b2d8, type: 2}
     - target: {fileID: 574540116984994417, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -46570,6 +46877,10 @@ PrefabInstance:
     - target: {fileID: 781623519428882385, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 801589443704305442, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 831448603846393080, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -47144,6 +47455,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4510388792358736121, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510388792358736121, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 6d6eebe6697a5c8428534c13b6f805ae, type: 2}
@@ -47190,6 +47505,10 @@ PrefabInstance:
     - target: {fileID: 4820580161084923652, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829156720800656708, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4829156720800656708, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -47323,6 +47642,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
       objectReference: {fileID: 2100000, guid: 8e1db9e89703f934bb959e324fd2b2d8, type: 2}
+    - target: {fileID: 6190302626887093740, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6201574448865359749, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -47359,6 +47682,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 6570346723070821967, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6589126927893049898, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -47386,6 +47713,10 @@ PrefabInstance:
     - target: {fileID: 6749089334034989210, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848890043992356392, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6862099946686679719, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -47612,6 +47943,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8142782304182835370, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142782304182835370, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 2748d02440233284ab844281c57834a0, type: 2}
@@ -47691,6 +48026,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 8567046915682659436, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8591177068281396830, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -47734,6 +48073,10 @@ PrefabInstance:
     - target: {fileID: 8796784569509032255, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: m_ReceiveGI
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898336934185915064, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8898336934185915064, guid: fa7addbb76242884ea5f22331f85f7d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -50325,7 +50668,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 17585
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 892.50476, y: 48.331333, z: 9.589403e+11, w: 3.8366355e+12}
+  m_BoundingSphereOverride: {x: 9.1e-44, y: 1e-45, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -51114,7 +51457,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 1e-45, y: 0, z: 0, w: 1.7e-44}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 1e-45, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -52292,7 +52635,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 5.6e-44, y: 6.726233e-39, z: 0, w: 1e-45}
+  m_BoundingSphereOverride: {x: 1.469367e-39, y: -2.015625, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -52365,7 +52708,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3690d533d161eac43ae2af7d17c4ca44, type: 2}
+  - {fileID: 2100000, guid: 07692b4dcbf038c46bd92304949602c7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -52622,7 +52965,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 4055279101f7d614891b83322841f823, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: a0dbf2eb0ba1e0545a252950a340d19c, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -52704,33 +53047,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 0.8395373
-    'sh[ 1]': 0.5965275
-    'sh[ 2]': 0.030869016
-    'sh[ 3]': -0.24961857
-    'sh[ 4]': -0.20043467
-    'sh[ 5]': -0.011256449
-    'sh[ 6]': -0.12155707
-    'sh[ 7]': -0.023865158
-    'sh[ 8]': -0.117824525
-    'sh[ 9]': 1.1275669
-    'sh[10]': 0.82746726
-    'sh[11]': 0.017108034
-    'sh[12]': -0.33075485
-    'sh[13]': -0.27741286
-    'sh[14]': -0.022204986
-    'sh[15]': -0.18429574
-    'sh[16]': -0.021203827
-    'sh[17]': -0.16395274
-    'sh[18]': 1.925184
-    'sh[19]': 1.4390714
-    'sh[20]': -0.0005532082
-    'sh[21]': -0.54932886
-    'sh[22]': -0.48590162
-    'sh[23]': -0.054898985
-    'sh[24]': -0.3416943
-    'sh[25]': -0.005892022
-    'sh[26]': -0.28765234
+    'sh[ 0]': 0.84116113
+    'sh[ 1]': 0.5041957
+    'sh[ 2]': -0.06664714
+    'sh[ 3]': -0.13658886
+    'sh[ 4]': -0.19074962
+    'sh[ 5]': -0.004117701
+    'sh[ 6]': -0.089464
+    'sh[ 7]': -0.012661695
+    'sh[ 8]': -0.07138772
+    'sh[ 9]': 1.112465
+    'sh[10]': 0.71856904
+    'sh[11]': -0.05084746
+    'sh[12]': -0.20590405
+    'sh[13]': -0.24979259
+    'sh[14]': -0.02519664
+    'sh[15]': -0.13291633
+    'sh[16]': 0.005074684
+    'sh[17]': -0.10116476
+    'sh[18]': 1.9146588
+    'sh[19]': 1.2463894
+    'sh[20]': -0.082102664
+    'sh[21]': -0.3430972
+    'sh[22]': -0.43495208
+    'sh[23]': -0.048526693
+    'sh[24]': -0.2385964
+    'sh[25]': 0.009772616
+    'sh[26]': -0.17808446
   m_SHValidForCapturePosition: {x: 85.013, y: -17.45, z: -14.079999}
   m_SHValidForSourcePosition: {x: 107.043, y: -18.44, z: -12.879999}
   m_HDProbeVersion: 9
@@ -53867,7 +54210,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0.23284687, y: 14299.25, z: 939718.56, w: 1.7077725e+19}
+  m_BoundingSphereOverride: {x: 9.1835e-41, y: 5.1134018e-37, z: 9.78048e-39, w: 7.80602e-40}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -54107,7 +54450,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 2.2119046e+30, z: 889216900, w: -7.2468333e-12}
+  m_BoundingSphereOverride: {x: 4.664e-42, y: 3.92095e-40, z: 4.484e-42, w: 7.17e-43}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
@@ -54984,7 +55327,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 4c3f771dc6e7b8646a949b3a042f746d, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 5f54d697cb0edf446bb286d6aaac9d2f, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -55066,33 +55409,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 0.11403442
-    'sh[ 1]': 0.017045608
-    'sh[ 2]': 0.081221856
-    'sh[ 3]': -0.015899716
-    'sh[ 4]': -0.0017893049
-    'sh[ 5]': 0.022763656
-    'sh[ 6]': 0.008108206
-    'sh[ 7]': -0.005540148
-    'sh[ 8]': -0.0022399013
-    'sh[ 9]': 0.10337111
-    'sh[10]': 0.017741567
-    'sh[11]': 0.07086567
-    'sh[12]': -0.014633921
-    'sh[13]': -0.0019060193
-    'sh[14]': 0.023239369
-    'sh[15]': 0.0066048144
-    'sh[16]': -0.004718673
-    'sh[17]': -0.0020391042
-    'sh[18]': 0.110523306
-    'sh[19]': 0.017526729
-    'sh[20]': 0.07708387
-    'sh[21]': -0.015090124
-    'sh[22]': -0.002246281
-    'sh[23]': 0.023217982
-    'sh[24]': 0.007234321
-    'sh[25]': -0.00465022
-    'sh[26]': -0.002155494
+    'sh[ 0]': 0.123961926
+    'sh[ 1]': 0.0010883841
+    'sh[ 2]': 0.07015464
+    'sh[ 3]': -0.014130428
+    'sh[ 4]': -0.00023873067
+    'sh[ 5]': 0.004844701
+    'sh[ 6]': 0.0041297534
+    'sh[ 7]': -0.007676979
+    'sh[ 8]': -0.0028618248
+    'sh[ 9]': 0.117357105
+    'sh[10]': 0.0011458441
+    'sh[11]': 0.06673625
+    'sh[12]': -0.0132904425
+    'sh[13]': -0.00031438246
+    'sh[14]': 0.0047099576
+    'sh[15]': 0.003905429
+    'sh[16]': -0.007244993
+    'sh[17]': -0.0027150463
+    'sh[18]': 0.1237084
+    'sh[19]': 0.0007366768
+    'sh[20]': 0.070350245
+    'sh[21]': -0.013448927
+    'sh[22]': -0.0005822109
+    'sh[23]': 0.004754067
+    'sh[24]': 0.0041042045
+    'sh[25]': -0.007605594
+    'sh[26]': -0.002876644
   m_SHValidForCapturePosition: {x: 113.6, y: -16.6, z: -26.33666}
   m_SHValidForSourcePosition: {x: 108.6, y: -17.16, z: -24.27666}
   m_HDProbeVersion: 9
@@ -55479,7 +55822,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 9a667246656f86944ab1aa3f1baa748c, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 3457bd8cfa4bbb74fb1882406a419e3d, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -55561,33 +55904,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 2.848183
-    'sh[ 1]': 1.2327704
-    'sh[ 2]': -2.110021
-    'sh[ 3]': -1.038491
-    'sh[ 4]': -0.19130072
-    'sh[ 5]': -0.39020467
-    'sh[ 6]': 0.08180568
-    'sh[ 7]': 0.35735855
-    'sh[ 8]': -0.038689647
-    'sh[ 9]': 2.98531
-    'sh[10]': 1.2921236
-    'sh[11]': -2.2116063
-    'sh[12]': -1.0884919
-    'sh[13]': -0.20051126
-    'sh[14]': -0.4089917
-    'sh[15]': 0.08574412
-    'sh[16]': 0.37456426
-    'sh[17]': -0.040552378
-    'sh[18]': 3.5866241
-    'sh[19]': 1.5523869
-    'sh[20]': -2.6570795
-    'sh[21]': -1.3077413
-    'sh[22]': -0.24089873
-    'sh[23]': -0.49137238
-    'sh[24]': 0.10301527
-    'sh[25]': 0.45000964
-    'sh[26]': -0.04872063
+    'sh[ 0]': 3.0885487
+    'sh[ 1]': 1.2902337
+    'sh[ 2]': -2.198747
+    'sh[ 3]': -1.0509039
+    'sh[ 4]': -0.1889943
+    'sh[ 5]': -0.42337698
+    'sh[ 6]': 0.083883144
+    'sh[ 7]': 0.35015807
+    'sh[ 8]': -0.05090214
+    'sh[ 9]': 3.2372487
+    'sh[10]': 1.3523531
+    'sh[11]': -2.3046033
+    'sh[12]': -1.1015022
+    'sh[13]': -0.19809377
+    'sh[14]': -0.44376114
+    'sh[15]': 0.08792161
+    'sh[16]': 0.36701715
+    'sh[17]': -0.05335289
+    'sh[18]': 3.8893077
+    'sh[19]': 1.6247485
+    'sh[20]': -2.7688088
+    'sh[21]': -1.3233722
+    'sh[22]': -0.2379943
+    'sh[23]': -0.53314525
+    'sh[24]': 0.10563136
+    'sh[25]': 0.4409423
+    'sh[26]': -0.064099416
   m_SHValidForCapturePosition: {x: 49.425144, y: -16.653961, z: -7.4687123}
   m_SHValidForSourcePosition: {x: 49.738377, y: -17.542604, z: -7.4687123}
   m_HDProbeVersion: 9
@@ -56505,7 +56848,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mona Lisa
+  m_text: Cat
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -56643,6 +56986,182 @@ RectTransform:
   m_AnchoredPosition: {x: 869.9126, y: -249.2172}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1908366991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1908366992}
+  - component: {fileID: 1908366994}
+  - component: {fileID: 1908366993}
+  m_Layer: 0
+  m_Name: Text (TMP) (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1908366992
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908366991}
+  m_LocalRotation: {x: -0, y: 0.00000034272668, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -186.39}
+  m_LocalScale: {x: 0.1017064, y: 0.1017064, z: 0.1017064}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 329562256}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 845.29, y: -250.52437}
+  m_SizeDelta: {x: 20, y: 5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1908366993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908366991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Nathan King
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 0
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -2.3738365, y: 0, z: -5.436408, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 1908366994}
+  m_maskType: 0
+--- !u!23 &1908366994
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908366991}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &1915515660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60546,7 +61065,7 @@ MonoBehaviour:
     camera:
       camera: 0
   m_ProxyVolume: {fileID: 0}
-  m_BakedTexture: {fileID: 8900000, guid: 45f284b87ac26c846a9d05a06df08e9c, type: 3}
+  m_BakedTexture: {fileID: 8900000, guid: 74e4e941b4feacc45a778730b95ac31d, type: 3}
   m_CustomTexture: {fileID: 0}
   m_BakedRenderData:
     m_WorldToCameraRHS:
@@ -60628,33 +61147,33 @@ MonoBehaviour:
     m_Aspect: 0
   m_HasValidSHForNormalization: 1
   m_SHForNormalization:
-    'sh[ 0]': 0.6453213
-    'sh[ 1]': 0.45041743
-    'sh[ 2]': -0.17601107
-    'sh[ 3]': 0.017848007
-    'sh[ 4]': -0.015652671
-    'sh[ 5]': -0.07945131
-    'sh[ 6]': -0.01679201
-    'sh[ 7]': 0.0012614876
-    'sh[ 8]': -0.06899465
-    'sh[ 9]': 0.62081516
-    'sh[10]': 0.42636472
-    'sh[11]': -0.15911603
-    'sh[12]': 0.017150864
-    'sh[13]': -0.014536456
-    'sh[14]': -0.07728796
-    'sh[15]': -0.014845982
-    'sh[16]': 0.0011789296
-    'sh[17]': -0.06550905
-    'sh[18]': 0.6887117
-    'sh[19]': 0.419988
-    'sh[20]': -0.15169883
-    'sh[21]': 0.014490668
-    'sh[22]': -0.013954663
-    'sh[23]': -0.08350418
-    'sh[24]': -0.013878685
-    'sh[25]': 0.0026538821
-    'sh[26]': -0.06667908
+    'sh[ 0]': 0.65134865
+    'sh[ 1]': 0.39633834
+    'sh[ 2]': -0.16501407
+    'sh[ 3]': -0.005141541
+    'sh[ 4]': 0.0010438795
+    'sh[ 5]': -0.05176755
+    'sh[ 6]': -0.0077754785
+    'sh[ 7]': 0.002137243
+    'sh[ 8]': -0.03349689
+    'sh[ 9]': 0.6258875
+    'sh[10]': 0.37603858
+    'sh[11]': -0.15131937
+    'sh[12]': -0.0047375187
+    'sh[13]': 0.0010498469
+    'sh[14]': -0.050225724
+    'sh[15]': -0.006935401
+    'sh[16]': 0.0022075148
+    'sh[17]': -0.03191065
+    'sh[18]': 0.6968854
+    'sh[19]': 0.37801856
+    'sh[20]': -0.14351983
+    'sh[21]': -0.007566563
+    'sh[22]': 0.00257247
+    'sh[23]': -0.055314727
+    'sh[24]': -0.006310102
+    'sh[25]': 0.001774434
+    'sh[26]': -0.032208227
   m_SHValidForCapturePosition: {x: 81.72, y: -17.16, z: -24.402697}
   m_SHValidForSourcePosition: {x: 81.72, y: -17.16, z: -24.402697}
   m_HDProbeVersion: 9

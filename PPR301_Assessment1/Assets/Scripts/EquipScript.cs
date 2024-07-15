@@ -38,6 +38,9 @@ public class EquipScript : MonoBehaviour
     public Canvas keypadCanvas3;
     public FPS_Controller FPSC;
 
+    public bool log1 = false;
+    public bool log1done = false;
+
     //public Vector3 playerPos;
 
     // Reference to the FMOD Studio Event Emitter component
@@ -64,6 +67,12 @@ public class EquipScript : MonoBehaviour
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/ExpulsionCube", GetComponent<Transform>().position);
             boom = false;
+        }
+        if (log1 == true)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/AudioLogs/AudioLog_1", GetComponent<Transform>().position);
+            log1 = false;
+            log1done = true;
         }
 
         //playerPos = this.transform.position;
@@ -134,7 +143,6 @@ public class EquipScript : MonoBehaviour
                 {
                     PD.col10 = true;
                 }
-
                 Collectable = hit.transform.gameObject;
                 collectableNum ++;
                 currentCollectablesUI.text = collectableNum.ToString();
@@ -204,6 +212,13 @@ public class EquipScript : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Confined;
                 Cursor.visible = true;
                 keypadCanvas3.gameObject.SetActive(true);
+            }
+            else if (hit.transform.name == "AudioRecorder")
+            {
+                if (!log1done)
+                {
+                    log1 = true;
+                }
             }
         }
     }

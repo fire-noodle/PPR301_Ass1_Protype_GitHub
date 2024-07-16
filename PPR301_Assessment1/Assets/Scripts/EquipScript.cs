@@ -41,6 +41,7 @@ public class EquipScript : MonoBehaviour
     public bool log1 = false;
     public bool log1done = false;
 
+
     //public Vector3 playerPos;
 
     // Reference to the FMOD Studio Event Emitter component
@@ -68,14 +69,7 @@ public class EquipScript : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/ExpulsionCube", GetComponent<Transform>().position);
             boom = false;
         }
-        if (log1 == true)
-        {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/AudioLogs/AudioLog_1", GetComponent<Transform>().position);
-            log1 = false;
-            log1done = true;
-        }
 
-        //playerPos = this.transform.position;
     }
 
     void Shoot()
@@ -144,7 +138,7 @@ public class EquipScript : MonoBehaviour
                     PD.col10 = true;
                 }
                 Collectable = hit.transform.gameObject;
-                collectableNum ++;
+                collectableNum++;
                 currentCollectablesUI.text = collectableNum.ToString();
                 Collectable.SetActive(false);
                 Collectable_UI.SetActive(true);
@@ -163,12 +157,12 @@ public class EquipScript : MonoBehaviour
                     doc3.DoorOpen2();
                 }
             }
-            else if (target != null && hit.transform.name == "button1" )
+            else if (target != null && hit.transform.name == "button1")
             {
                 //do button thing
                 Teleport = new Vector3(80.8949966f, -18.9099998f, -14.9770002f);
                 Player.transform.position = Teleport;
-                
+
             }
             else if (target != null && hit.transform.name == "button2")
             {
@@ -213,12 +207,12 @@ public class EquipScript : MonoBehaviour
                 Cursor.visible = true;
                 keypadCanvas3.gameObject.SetActive(true);
             }
-            else if (hit.transform.name == "AudioRecorder")
+
+            if ((hit.transform.gameObject.GetComponent("StudioEventEmitter")) != null)
             {
-                if (!log1done)
-                {
-                    log1 = true;
-                }
+                eventEmitter = hit.transform.gameObject.GetComponent<FMODUnity.StudioEventEmitter>();
+                eventEmitter.Play();
+
             }
         }
     }
@@ -257,10 +251,10 @@ public class EquipScript : MonoBehaviour
     {
         yield return new WaitForSeconds(5); // Wait for 5 seconds
 
-            // Code to execute after 5 seconds
-            Debug.Log("Cube despawned!");
-            PlayerTransform.DetachChildren();
-            Item1.SetActive(false);
+        // Code to execute after 5 seconds
+        Debug.Log("Cube despawned!");
+        PlayerTransform.DetachChildren();
+        Item1.SetActive(false);
     }
     IEnumerator CubeTimerRepulser()
     {

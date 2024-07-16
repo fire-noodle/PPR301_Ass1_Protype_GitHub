@@ -58,6 +58,7 @@ Material:
     - _SupportDecals: 0
     - _ZTestGBuffer: 3
     m_Colors:
-    - _Bush_Colour: {r: 0.41509432, g: 0.2545586, b: 0, a: 0}
+    - _Bush_Colour: {r: 0.9617053, g: 1, b: 0.6839622, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

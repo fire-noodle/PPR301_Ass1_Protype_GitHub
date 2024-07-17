@@ -48,9 +48,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 46dc5c1d86a4d11489d28debf3f9affc, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 46dc5c1d86a4d11489d28debf3f9affc, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 46dc5c1d86a4d11489d28debf3f9affc, type: 3}
       propertyPath: m_Name
       value: AudioRecorder
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 46dc5c1d86a4d11489d28debf3f9affc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59,6 +71,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 46dc5c1d86a4d11489d28debf3f9affc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 623110053021179811}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 46dc5c1d86a4d11489d28debf3f9affc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1042371398399417994}
   m_SourcePrefab: {fileID: 100100000, guid: 46dc5c1d86a4d11489d28debf3f9affc, type: 3}
 --- !u!1 &6011479243159386205 stripped
 GameObject:
@@ -80,14 +95,14 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1248630321
-      Data2: 1321514840
-      Data3: -1597041747
-      Data4: -547562718
-    Path: event:/Interactables/AudioLogs/AudioLog_1
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   Event: 
-  PlayEvent: 1
-  StopEvent: 8
+  PlayEvent: 0
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -96,3 +111,24 @@ MonoBehaviour:
   OverrideAttenuation: 1
   OverrideMinDistance: 1
   OverrideMaxDistance: 6.54
+--- !u!65 &1042371398399417994
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6011479243159386205}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.17030205, y: 0.029724533, z: 0.3574226}
+  m_Center: {x: 0, y: 0, z: 0}

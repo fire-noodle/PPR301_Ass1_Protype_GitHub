@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HDRP
   m_EditorClassIdentifier: 
   m_RenderPipelineSettings:
-    supportShadowMask: 1
+    supportShadowMask: 0
     supportSSR: 1
     supportSSRTransparent: 1
     supportSSAO: 1
@@ -29,9 +29,9 @@ MonoBehaviour:
         m_Id: With3Levels
     supportVolumetrics: 0
     supportVolumetricClouds: 0
-    supportLightLayers: 0
+    supportLightLayers: 1
     renderingLayerMaskBuffer: 0
-    supportWater: 1
+    supportWater: 0
     waterSimulationResolution: 128
     supportWaterExclusion: 1
     supportWaterDeformation: 1
@@ -117,7 +117,7 @@ MonoBehaviour:
       maxLocalVolumetricFogSize: 0
       maxLocalVolumetricFogOnScreen: 256
     hdShadowInitParams:
-      maxShadowRequests: 128
+      maxShadowRequests: 200
       directionalShadowsDepthBits: 32
       punctualShadowFilteringQuality: 1
       directionalShadowFilteringQuality: 1
@@ -221,7 +221,7 @@ MonoBehaviour:
       ChromaticAberrationMaxSamples: 03000000060000000c000000
     lightSettings:
       useContactShadow:
-        m_Values: 000001
+        m_Values: 000100
         m_SchemaId:
           m_Id: With3Levels
     maximumLODLevel:

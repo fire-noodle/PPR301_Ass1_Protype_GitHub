@@ -206,14 +206,7 @@ public class EquipScript : MonoBehaviour
                 Cursor.visible = true;
                 keypadCanvas3.gameObject.SetActive(true);
             }
-            /*
-            if ((hit.transform.gameObject.GetComponent("StudioEventEmitter")) != null && (hit.transform.CompareTag("AudioLog")))
-            {
-                eventEmitter = hit.transform.gameObject.GetComponent<FMODUnity.StudioEventEmitter>();
-                eventEmitter.Play();
 
-            }
-            */
 
             if (hit.transform.CompareTag("AudioLog"))
 			{

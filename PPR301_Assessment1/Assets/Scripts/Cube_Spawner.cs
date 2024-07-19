@@ -39,7 +39,7 @@ public class Cube_Spawner : MonoBehaviour
             // Instantiate the object at the spawn position
             spawnedObject1 = Instantiate(prefab, spawnPosition, Quaternion.identity);
             spawnedObject1.GetComponent<Rigidbody>().isKinematic = true;
-            isObject1Spawned = true; // Set the flag to true
+            //isObject1Spawned = true; // Set the flag to true
         }
         else // If the object is spawned, respawn it
         {
@@ -58,7 +58,7 @@ public class Cube_Spawner : MonoBehaviour
             // Instantiate the object at the spawn position
             spawnedObject2 = Instantiate(prefab, spawnPosition, Quaternion.identity);
             spawnedObject2.GetComponent<Rigidbody>().isKinematic = true;
-            isObject2Spawned = true; // Set the flag to true
+            //isObject2Spawned = true; // Set the flag to true
         }
         else // If the object is spawned, respawn it
         {
@@ -76,7 +76,7 @@ public class Cube_Spawner : MonoBehaviour
             // Instantiate the object at the spawn position
             spawnedObject3 = Instantiate(prefab_repulse, spawnPosition, Quaternion.identity);
             spawnedObject3.GetComponent<Rigidbody>().isKinematic = true;
-            isObject3Spawned = true; // Set the flag to true
+            //isObject3Spawned = true; // Set the flag to true
         }
         else // If the object is spawned, respawn it
         {

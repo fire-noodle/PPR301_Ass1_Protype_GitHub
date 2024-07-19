@@ -22,7 +22,7 @@ public class Repulsion_Cube : MonoBehaviour
 
     public void Repulse()
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, repulseRadius);
+        Collider[] colliders = Physics.OverlapSphere(this.transform.position, repulseRadius);
 
         foreach (Collider col in colliders)
         {

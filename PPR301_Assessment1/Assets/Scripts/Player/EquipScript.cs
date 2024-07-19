@@ -96,46 +96,46 @@ public class EquipScript : MonoBehaviour
             else if (target != null && hit.transform.CompareTag("collectable"))
             {
                 // save data testers
-                if (hit.transform.name == "StarCollectable")
-                {
-                    PD.col1 = true;
-                }
-                else if (hit.transform.name == "StarCollectable (1)")
-                {
-                    PD.col2 = true;
-                }
-                else if (hit.transform.name == "StarCollectable (2)")
-                {
-                    PD.col3 = true;
-                }
-                else if (hit.transform.name == "StarCollectable (3)")
-                {
-                    PD.col4 = true;
-                }
-                else if (hit.transform.name == "StarCollectable (4)")
-                {
-                    PD.col5 = true;
-                }
-                else if (hit.transform.name == "StarCollectable (5)")
-                {
-                    PD.col6 = true;
-                }
-                else if (hit.transform.name == "StarCollectable (6)")
-                {
-                    PD.col7 = true;
-                }
-                else if (hit.transform.name == "StarCollectable (cubeSpawner)")
-                {
-                    PD.col8 = true;
-                }
-                else if (hit.transform.name == "StarCollectable (spawned)")
-                {
-                    PD.col9 = true;
-                }
-                else if (hit.transform.name == "StarCollectable (9)")
-                {
-                    PD.col10 = true;
-                }
+                //if (hit.transform.name == "StarCollectable")
+                //{
+                //    PD.col1 = true;
+                //}
+                //else if (hit.transform.name == "StarCollectable (1)")
+                //{
+                //    PD.col2 = true;
+                //}
+                //else if (hit.transform.name == "StarCollectable (2)")
+                //{
+                //    PD.col3 = true;
+                //}
+                //else if (hit.transform.name == "StarCollectable (3)")
+                //{
+                //    PD.col4 = true;
+                //}
+                //else if (hit.transform.name == "StarCollectable (4)")
+                //{
+                //    PD.col5 = true;
+                //}
+                //else if (hit.transform.name == "StarCollectable (5)")
+                //{
+                //    PD.col6 = true;
+                //}
+                //else if (hit.transform.name == "StarCollectable (6)")
+                //{
+                //    PD.col7 = true;
+                //}
+                //else if (hit.transform.name == "StarCollectable (cubeSpawner)")
+                //{
+                //    PD.col8 = true;
+                //}
+                //else if (hit.transform.name == "StarCollectable (spawned)")
+                //{
+                //    PD.col9 = true;
+                //}
+                //else if (hit.transform.name == "StarCollectable (9)")
+                //{
+                //    PD.col10 = true;
+                //}
                 Collectable = hit.transform.gameObject;
                 collectableNum++;
                 currentCollectablesUI.text = collectableNum.ToString();
@@ -219,16 +219,19 @@ public class EquipScript : MonoBehaviour
     void UnequipObject()
     {
         PlayerTransform.DetachChildren();
-        Item1.transform.eulerAngles = new Vector3(Item1.transform.eulerAngles.x, Item1.transform.eulerAngles.y, Item1.transform.eulerAngles.z);
-        Item1.GetComponent<Rigidbody>().isKinematic = false;
-
-        throwDirection = Item1.transform.forward;
-
-        //throw
-        if (canThrow)
+        if (Item1 != null)
         {
-            Item1.GetComponent<Rigidbody>().AddForce(throwDirection * throwForce, ForceMode.Impulse);
-            canThrow = false;
+            Item1.transform.eulerAngles = new Vector3(Item1.transform.eulerAngles.x, Item1.transform.eulerAngles.y, Item1.transform.eulerAngles.z);
+            Item1.GetComponent<Rigidbody>().isKinematic = false;
+
+            throwDirection = Item1.transform.forward;
+
+            //throw
+            if (canThrow)
+            {
+                Item1.GetComponent<Rigidbody>().AddForce(throwDirection * throwForce, ForceMode.Impulse);
+                canThrow = false;
+            }
         }
 
     }
@@ -248,15 +251,18 @@ public class EquipScript : MonoBehaviour
 
     IEnumerator CubeTimer()
     {
+        GameObject item1temp = Item1;
         yield return new WaitForSeconds(5); // Wait for 5 seconds
 
         // Code to execute after 5 seconds
         Debug.Log("Cube despawned!");
         PlayerTransform.DetachChildren();
-        Item1.SetActive(false);
+        // Item1.SetActive(false);
+        Destroy(item1temp);
     }
     IEnumerator CubeTimerRepulser()
     {
+        GameObject item1temp = Item1;
         yield return new WaitForSeconds(5); // Wait for 5 seconds
 
         // Code to execute after 5 seconds
@@ -264,8 +270,10 @@ public class EquipScript : MonoBehaviour
         PlayerTransform.DetachChildren();
 
         //repulsives start here
+        RC = item1temp.GetComponent <Repulsion_Cube>();
         RC.Repulse();
-        Item1.SetActive(false);
+        //item1temp.SetActive(false);
+        Destroy(item1temp);
     }
     IEnumerator UIText()
     {

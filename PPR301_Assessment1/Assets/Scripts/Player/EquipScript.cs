@@ -255,10 +255,13 @@ public class EquipScript : MonoBehaviour
         yield return new WaitForSeconds(5); // Wait for 5 seconds
 
         // Code to execute after 5 seconds
-        Debug.Log("Cube despawned!");
-        PlayerTransform.DetachChildren();
-        // Item1.SetActive(false);
-        Destroy(item1temp);
+        if (item1temp != null)
+        {
+            Debug.Log("Cube despawned!");
+            PlayerTransform.DetachChildren();
+            // Item1.SetActive(false);
+            Destroy(item1temp);
+        }
     }
     IEnumerator CubeTimerRepulser()
     {
@@ -266,14 +269,18 @@ public class EquipScript : MonoBehaviour
         yield return new WaitForSeconds(5); // Wait for 5 seconds
 
         // Code to execute after 5 seconds
-        boom = true;
-        PlayerTransform.DetachChildren();
 
-        //repulsives start here
-        RC = item1temp.GetComponent <Repulsion_Cube>();
-        RC.Repulse();
-        //item1temp.SetActive(false);
-        Destroy(item1temp);
+        if (item1temp != null)
+        {
+            boom = true;
+            PlayerTransform.DetachChildren();
+
+            //repulsives start here
+            RC = item1temp.GetComponent<Repulsion_Cube>();
+            RC.Repulse();
+            //item1temp.SetActive(false);
+            Destroy(item1temp);
+        }
     }
     IEnumerator UIText()
     {

@@ -56055,7 +56055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0.389}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0015, y: -0.1039}
+  m_AnchoredPosition: {x: 0.0015, y: -0.0992}
   m_SizeDelta: {x: 12.83463, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1613509759
@@ -56078,8 +56078,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: bascially button makes cube. if cube already been made, button remakes
-    it
+  m_text: bascially button makes cube. if cube already been made, button destroys
+    cube. repeat.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 212b158214a97eb4093935b2680fbde3, type: 2}
   m_sharedMaterial: {fileID: -4474694870912718725, guid: 212b158214a97eb4093935b2680fbde3, type: 2}

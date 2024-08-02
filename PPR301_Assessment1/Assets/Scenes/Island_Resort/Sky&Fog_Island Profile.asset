@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
   m_Name: HDRISky
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   rotation:
     m_OverrideState: 1
-    m_Value: 171
+    m_Value: 359.8537
   skyIntensityMode:
     m_OverrideState: 1
     m_Value: 0
@@ -71,10 +71,10 @@ MonoBehaviour:
       multiplyValue: 1
   sunInitialRotation:
     m_OverrideState: 0
-    m_Value: -Infinity
+    m_Value: -359.8537
   lockSun:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   enableBackplate:
     m_OverrideState: 0
     m_Value: 0
@@ -164,8 +164,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   exposure:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   multiplier:
     m_OverrideState: 0
     m_Value: 1
@@ -332,13 +332,13 @@ MonoBehaviour:
     m_Value: 0
   top:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0, b: 1, a: 1}
+    m_Value: {r: 0, g: 0, b: 0.745283, a: 1}
   middle:
     m_OverrideState: 1
-    m_Value: {r: 0.3, g: 0.7, b: 1, a: 1}
+    m_Value: {r: 0.2924528, g: 0.21174687, b: 0.19450872, a: 1}
   bottom:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
   gradientDiffusion:
     m_OverrideState: 1
     m_Value: 1

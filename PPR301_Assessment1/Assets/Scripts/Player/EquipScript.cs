@@ -21,9 +21,13 @@ public class EquipScript : MonoBehaviour
 
     public Cube_Spawner cs1;
     public Cube_Spawner cs2;
+    public LV2_Cube_Spawner lv2cs1;
     public Door_Open_Conditional doc1;
     public Door_Open_Conditional doc2;
     public Door_Open_Conditional doc3;
+    //level 2 scripts
+    public Door_Open_Conditional doc4;
+
     public PlayerData PD;
 
     public GameObject Collectable_UI;
@@ -156,6 +160,7 @@ public class EquipScript : MonoBehaviour
                     doc3.DoorOpen2();
                 }
             }
+            //level 1 buttons
             else if (target != null && hit.transform.name == "button1")
             {
                 //do button thing
@@ -182,6 +187,26 @@ public class EquipScript : MonoBehaviour
             {
                 cs2.Tutorial_Cube3();
             }
+            //level 2 buttons
+            else if (target != null && hit.transform.name == "LV2button1")
+            {
+               //doc1.DoorOpen2();
+                doc2.DoorOpen2();
+                doc4.DoorOpen2();
+            }
+            else if (target != null && hit.transform.name == "LV2button2")
+            {
+                doc1.DoorOpen2();
+                doc3.DoorOpen2();
+                doc4.DoorOpen2();
+            }
+            else if (target != null && hit.transform.name == "LV2button3")
+            {
+                doc1.DoorOpen2();
+                doc2.DoorOpen2();
+                lv2cs1.Tutorial_Cube();
+            }
+            //level 1 keypads
             else if (hit.transform.name == "keypad1")
             {
                 FPSC.canMove = false;

@@ -9,6 +9,7 @@ public class Door_Open_Conditional : MonoBehaviour
     public Animator animator;
     public bool Action = false;
     public bool opened = false;
+    public int doorDirection = 1;
 
     void OnTriggerEnter(Collider collision)
     {
@@ -28,8 +29,18 @@ public class Door_Open_Conditional : MonoBehaviour
     {
         if (opened == true)
         {
+            if (doorDirection == 0)
+            {
+                animator.SetBool("Open", false);
+                doorDirection++;
+            }
+            else
+            {
+                doorDirection--;
+            }
             FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/DoorOpen", GetComponent<Transform>().position);
             opened = false;
+            
         }
 
     }

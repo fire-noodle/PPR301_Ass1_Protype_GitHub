@@ -7,6 +7,7 @@ public class Door_Open : MonoBehaviour
 
     public Animator animator;
     public bool Action = false;
+    public bool Opened = false;
 
     void OnTriggerEnter(Collider collision)
     {
@@ -27,11 +28,25 @@ public class Door_Open : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (Action == true)
+            if (Opened == false)
             {
-                Action = false;
-                animator.SetBool("Open", true);
-                FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/DoorOpen", GetComponent<Transform>().position);
+                if (Action == true)
+                {
+                    //Action = false;
+                    animator.SetBool("Open", true);
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/DoorOpen", GetComponent<Transform>().position);
+                    Opened = true;
+                }
+            }
+            else
+            {
+                if (Action == true)
+                {
+                    //Action = false;
+                    animator.SetBool("Open", false);
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/DoorOpen", GetComponent<Transform>().position);
+                    Opened = false;
+                }
             }
         }
 

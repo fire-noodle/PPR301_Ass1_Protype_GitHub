@@ -22,6 +22,8 @@ public class Keypad : MonoBehaviour
     public GameObject b_clear;
     public GameObject b_exit;
 
+    public GameObject collectable1;
+
     public Canvas keypadCanvas;
     public FPS_Controller FPSC;
 
@@ -29,6 +31,7 @@ public class Keypad : MonoBehaviour
 
     public bool failure = false;
     public bool success = false;
+    public bool collected1 = false;
 
     void Update()
     {
@@ -124,6 +127,24 @@ public class Keypad : MonoBehaviour
         {
             //door open
             doc1.DoorOpen2();
+
+            //reactivate player
+            keypadCanvas.gameObject.SetActive(false);
+            FPSC.canMove = true;
+            FPSC.canZoom = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            success = true;
+        }
+        //Level 2 keypads
+        else if (characterHolder.text == "5297" && this.transform.name == "LV2keypad1")
+        {
+            if (collected1 == false)
+            {
+                //spawn collectable
+                collectable1.SetActive(true);
+                collected1 = true;
+            }
 
             //reactivate player
             keypadCanvas.gameObject.SetActive(false);

@@ -231,6 +231,15 @@ public class EquipScript : MonoBehaviour
                 Cursor.visible = true;
                 keypadCanvas3.gameObject.SetActive(true);
             }
+            //level 2 keypades
+            else if (hit.transform.name == "LV2keypad1")
+            {
+                FPSC.canMove = false;
+                FPSC.canZoom = false;
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+                keypadCanvas.gameObject.SetActive(true);
+            }
 
 
             if (hit.transform.CompareTag("AudioLog"))

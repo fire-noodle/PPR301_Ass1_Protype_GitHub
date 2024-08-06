@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class EquipScript : MonoBehaviour
@@ -206,6 +207,11 @@ public class EquipScript : MonoBehaviour
                 doc2.DoorOpen2();
                 lv2cs1.Tutorial_Cube();
             }
+            else if (target != null && hit.transform.name == "button9")
+            {
+                SceneManager.LoadScene("Island_Resort");
+            }
+
             //level 1 keypads
             else if (hit.transform.name == "keypad1")
             {

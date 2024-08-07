@@ -11,6 +11,7 @@ TagManager:
   - equippable_pressable_repulsable
   - keypad
   - AudioLog
+  - keycard
   layers:
   - Default
   - TransparentFX

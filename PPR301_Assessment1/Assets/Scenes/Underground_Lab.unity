@@ -27432,6 +27432,7 @@ MonoBehaviour:
     collectables: 0
   Collectable_UI: {fileID: 1991871749}
   currentCollectablesUI: {fileID: 402410764}
+  keycardText: {fileID: 1991871749}
   collectableNum: 0
   RC: {fileID: 8757996540264515792, guid: 6fc48098cb960d54da32f462e6423aa7, type: 3}
   boom: 0
@@ -27441,6 +27442,7 @@ MonoBehaviour:
   FPSC: {fileID: 819502200}
   log1: 0
   log1done: 0
+  hasKeycard1: 0
 --- !u!114 &819502204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44658,6 +44660,10 @@ PrefabInstance:
       value: ConstructionDoor_Prefab (7)
       objectReference: {fileID: 0}
     - target: {fileID: 4370602778756554847, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370602778756554847, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -44679,7 +44685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6392772032520516352, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.589
+      value: -30.61
       objectReference: {fileID: 0}
     - target: {fileID: 6392772032520516352, guid: 9ed435fc2f04d884bbfcf578e105504f, type: 3}
       propertyPath: m_LocalPosition.y

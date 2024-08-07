@@ -9,6 +9,7 @@ public class EquipScript : MonoBehaviour
     public Transform PlayerTransform;
     public GameObject Item1;
     public GameObject Collectable;
+    public GameObject Keycard;
     public GameObject BigAssCube;
     public GameObject Player;
     public Camera Camera;
@@ -33,6 +34,7 @@ public class EquipScript : MonoBehaviour
 
     public GameObject Collectable_UI;
     public TMP_Text currentCollectablesUI;
+    public GameObject keycardText;
     public int collectableNum = 0;
 
     public Repulsion_Cube RC;
@@ -45,6 +47,7 @@ public class EquipScript : MonoBehaviour
 
     public bool log1 = false;
     public bool log1done = false;
+    public bool hasKeycard1 = false;
 
 
     //public Vector3 playerPos;
@@ -58,6 +61,7 @@ public class EquipScript : MonoBehaviour
         Item1.GetComponent<Rigidbody>().isKinematic = true;
 
         Collectable_UI.SetActive(false);
+        keycardText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -97,6 +101,14 @@ public class EquipScript : MonoBehaviour
                 {
                     StartCoroutine(CubeTimerRepulser());
                 }
+            }
+            else if (target != null && (hit.transform.CompareTag("keycard")))
+            {
+                keycardText.SetActive(true);
+                StartCoroutine(UIText2());
+                hasKeycard1 = true;
+                Keycard = hit.transform.gameObject;
+                Keycard.SetActive(false);
             }
             else if (target != null && hit.transform.CompareTag("collectable"))
             {
@@ -327,6 +339,12 @@ public class EquipScript : MonoBehaviour
         yield return new WaitForSeconds(5); // Wait for 5 seconds
 
         Collectable_UI.SetActive(false);
+    }
+    IEnumerator UIText2()
+    {
+        yield return new WaitForSeconds(8); // Wait for 5 seconds
+
+        keycardText.SetActive(false);
     }
 
 

@@ -29,6 +29,7 @@ public class EquipScript : MonoBehaviour
     public Door_Open_Conditional doc3;
     //level 2 scripts
     public Door_Open_Conditional doc4;
+    public Door_Open_Conditional doc5;
 
     public PlayerData PD;
 
@@ -257,6 +258,10 @@ public class EquipScript : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Confined;
                 Cursor.visible = true;
                 keypadCanvas.gameObject.SetActive(true);
+            }
+            else if (hit.transform.name == "keyslot1" && hasKeycard1)
+            {
+                doc5.DoorOpen2();
             }
 
 

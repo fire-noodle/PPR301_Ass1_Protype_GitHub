@@ -8,6 +8,7 @@ public class LV2_Cube_Spawner : MonoBehaviour
     public GameObject prefab_repulse; //repulsion cube
     private GameObject spawnedObject1; // Reference to the instantiated object
     public GameObject turorialSpawn1;
+    public GameObject turorialSpawn2;
 
     private bool isObject1Spawned = false; // Flag to track if the object is currently spawned
     private Vector3 spawnPosition;// Position to spawn the object initially
@@ -46,6 +47,33 @@ public class LV2_Cube_Spawner : MonoBehaviour
             else
             {
                 spawnedObject1 = Instantiate(prefab, spawnPosition, Quaternion.identity);
+                spawnedObject1.GetComponent<Rigidbody>().isKinematic = true;
+
+            }
+        }
+    }
+    public void Tutorial_Cube2()
+    {
+        spawnPosition = turorialSpawn2.transform.position;
+
+        if (!isObject1Spawned)
+        {
+            // Instantiate the object at the spawn position
+            spawnedObject1 = Instantiate(prefab_repulse, spawnPosition, Quaternion.identity);
+            spawnedObject1.GetComponent<Rigidbody>().isKinematic = true;
+            isObject1Spawned = true; // Set the flag to true
+        }
+        else // If the object is spawned, destroy it
+        {
+            if (spawnedObject1 != null)
+            {
+                Destroy(spawnedObject1);
+                spawnedObject1 = Instantiate(prefab_repulse, spawnPosition, Quaternion.identity);
+                spawnedObject1.GetComponent<Rigidbody>().isKinematic = true;
+            }
+            else
+            {
+                spawnedObject1 = Instantiate(prefab_repulse, spawnPosition, Quaternion.identity);
                 spawnedObject1.GetComponent<Rigidbody>().isKinematic = true;
 
             }

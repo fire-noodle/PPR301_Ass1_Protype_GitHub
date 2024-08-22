@@ -154,6 +154,19 @@ public class Keypad : MonoBehaviour
             Cursor.visible = false;
             success = true;
         }
+        else if (characterHolder.text == "5041" && this.transform.name == "LV2keypad2")
+        {
+            //door open
+            doc1.DoorOpen2();
+
+            //reactivate player
+            keypadCanvas.gameObject.SetActive(false);
+            FPSC.canMove = true;
+            FPSC.canZoom = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            success = true;
+        }
         else
         {
             failure = true;

@@ -23,13 +23,14 @@ public class EquipScript : MonoBehaviour
 
     public Cube_Spawner cs1;
     public Cube_Spawner cs2;
-    public LV2_Cube_Spawner lv2cs1;
     public Door_Open_Conditional doc1;
     public Door_Open_Conditional doc2;
     public Door_Open_Conditional doc3;
     //level 2 scripts
     public Door_Open_Conditional doc4;
     public Door_Open_Conditional doc5;
+    public LV2_Cube_Spawner lv2cs1;
+    public LV2_Cube_Spawner lv2cs2;
 
     public PlayerData PD;
 
@@ -220,6 +221,10 @@ public class EquipScript : MonoBehaviour
                 doc2.DoorOpen2();
                 lv2cs1.Tutorial_Cube();
             }
+            else if (target != null && hit.transform.name == "LV2button4")
+            {
+                lv2cs2.Tutorial_Cube2();
+            }
             else if (target != null && hit.transform.name == "button9")
             {
                 SceneManager.LoadScene("Island_Resort");
@@ -258,6 +263,14 @@ public class EquipScript : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Confined;
                 Cursor.visible = true;
                 keypadCanvas.gameObject.SetActive(true);
+            }
+            else if (hit.transform.name == "LV2keypad2")
+            {
+                FPSC.canMove = false;
+                FPSC.canZoom = false;
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+                keypadCanvas2.gameObject.SetActive(true);
             }
             else if (hit.transform.name == "keyslot1" && hasKeycard1)
             {

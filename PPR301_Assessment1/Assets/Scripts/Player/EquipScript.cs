@@ -272,6 +272,14 @@ public class EquipScript : MonoBehaviour
                 Cursor.visible = true;
                 keypadCanvas2.gameObject.SetActive(true);
             }
+            else if (hit.transform.name == "LV2keypad3")
+            {
+                FPSC.canMove = false;
+                FPSC.canZoom = false;
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+                keypadCanvas3.gameObject.SetActive(true);
+            }
             else if (hit.transform.name == "keyslot1" && hasKeycard1)
             {
                 doc5.DoorOpen2();

@@ -160,7 +160,8 @@ public class EquipScript : MonoBehaviour
                 currentCollectablesUI.text = collectableNum.ToString();
                 Collectable.SetActive(false);
                 Collectable_UI.SetActive(true);
-                StartCoroutine(UIText());
+                //Coroutine displays star counter for a limited time
+                //StartCoroutine(UIText());
 
                 if (collectableNum == 4)
                 {
